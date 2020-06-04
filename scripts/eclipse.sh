@@ -1,5 +1,5 @@
 #! /bin/bash
-DIR="$HOME/opt/eclipse"
+DIR="$HOME/eclipse"
 DOWNLOADS="$HOME/Downloads"
 
 ### Check for dir, if not found create it using the mkdir ###
@@ -7,16 +7,17 @@ DOWNLOADS="$HOME/Downloads"
 
 
 ### Download and install eclipse ###
-wget -P $DOWNLOADS http://mirror.dkm.cz/eclipse/oomph/epp/2020-03/R/eclipse-inst-linux64.tar.gz
+#wget -P $DOWNLOADS http://mirror.dkm.cz/eclipse/oomph/epp/2020-03/R/eclipse-inst-linux64.tar.gz
 cd $DOWNLOADS
-tar eclipse-inst-linux64.tar.gz
-eclipse-inst-linux64/eclipse-installer/eclipse-inst
+tar -xvzf eclipse-inst-linux64.tar.gz
+eclipse-installer/eclipse-inst
 
 
 ###Set enviroment variables ###
-echo 'EC_HOME="$DIR"' >> ~/.bashrc 
+echo 'EC_HOME="[$DIR]/eclipse/java-2020-03/eclipse"' >> ~/.bashrc 
 echo 'PATH=$PATH:$EC_HOME' >> ~/.bashrc 
 source ~/.bashrc 
+
 
 
 
