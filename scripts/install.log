@@ -2,14 +2,25 @@
 1. Updating System
 ------------------
 Hit:1 http://gb.archive.ubuntu.com/ubuntu bionic InRelease
-Get:2 http://gb.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
-Get:3 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:3 http://gb.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
 Get:4 http://gb.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
-Fetched 252 kB in 1s (256 kB/s)
+Get:5 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages [685 kB]
+Get:6 http://security.ubuntu.com/ubuntu bionic-security/main amd64 DEP-11 Metadata [43.8 kB]
+Get:7 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 DEP-11 Metadata [49.2 kB]
+Get:8 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 DEP-11 Metadata [2,464 B]
+Get:9 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [951 kB]
+Get:10 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [306 kB]
+Get:11 http://gb.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1,077 kB]
+Get:12 http://gb.archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [1,018 kB]
+Get:13 http://gb.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [279 kB]
+Get:14 http://gb.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 DEP-11 Metadata [2,468 B]
+Get:15 http://gb.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [7,972 B]
+Fetched 4,673 kB in 11s (444 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
-201 packages can be upgraded. Run 'apt list --upgradable' to see them.
+203 packages can be upgraded. Run 'apt list --upgradable' to see them.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -68,15 +79,15 @@ The following packages will be upgraded:
   linux-headers-generic-hwe-18.04 linux-image-generic-hwe-18.04 mount
   netplan.io network-manager network-manager-config-connectivity-ubuntu nplan
   openssl ppp pulseaudio pulseaudio-module-bluetooth pulseaudio-utils
-  python3-apport python3-aptdaemon python3-aptdaemon.gtk3widgets python3-pil
-  python3-problem-report python3-renderpm python3-reportlab
-  python3-reportlab-accel python3-software-properties python3-update-manager
-  python3.6 python3.6-minimal rfkill rsync samba-libs
-  software-properties-common software-properties-gtk systemd systemd-sysv
-  tzdata ubuntu-software udev unattended-upgrades update-manager
-  update-manager-core util-linux uuid-runtime vim-common vim-tiny
-  xserver-common xserver-xephyr xwayland xxd
-201 to upgrade, 8 to newly install, 0 to remove and 0 not to upgrade.
+  python-apt-common python3-apport python3-apt python3-aptdaemon
+  python3-aptdaemon.gtk3widgets python3-pil python3-problem-report
+  python3-renderpm python3-reportlab python3-reportlab-accel
+  python3-software-properties python3-update-manager python3.6
+  python3.6-minimal rfkill rsync samba-libs software-properties-common
+  software-properties-gtk systemd systemd-sysv tzdata ubuntu-software udev
+  unattended-upgrades update-manager update-manager-core util-linux
+  uuid-runtime vim-common vim-tiny xserver-common xserver-xephyr xwayland xxd
+203 to upgrade, 8 to newly install, 0 to remove and 0 not to upgrade.
 Need to get 268 MB/324 MB of archives.
 After this operation, 361 MB of additional disk space will be used.
 Get:1 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libicu60 amd64 60.2-3ubuntu3.1 [8,054 kB]
@@ -100,68 +111,70 @@ Get:18 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libisc169 a
 Get:19 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 liblwres160 amd64 1:9.11.3+dfsg-1ubuntu1.12 [34.6 kB]
 Get:20 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm-common all 2.4.99-1ubuntu1~18.04.2 [5,328 B]
 Get:21 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm2 amd64 2.4.99-1ubuntu1~18.04.2 [31.7 kB]
-Get:22 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 rsync amd64 3.1.2-2.1ubuntu1.1 [334 kB]
-Get:23 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.30-21ubuntu1~18.04.3 [1,839 kB]
-Get:24 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils-common amd64 2.30-21ubuntu1~18.04.3 [196 kB]
-Get:25 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils amd64 2.30-21ubuntu1~18.04.3 [3,388 B]
-Get:26 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libbinutils amd64 2.30-21ubuntu1~18.04.3 [488 kB]
-Get:27 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 bluez-cups amd64 5.48-0ubuntu3.4 [64.0 kB]
-Get:28 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 bluez-obexd amd64 5.48-0ubuntu3.4 [167 kB]
-Get:29 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 cpp-7 amd64 7.5.0-3ubuntu1~18.04 [8,591 kB]
-Get:30 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc-7-base amd64 7.5.0-3ubuntu1~18.04 [18.3 kB]
-Get:31 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libarchive13 amd64 3.2.2-3.1ubuntu0.6 [288 kB]
-Get:32 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 file-roller amd64 3.28.0-1ubuntu1.2 [320 kB]
-Get:33 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 firefox amd64 77.0.1+build1-0ubuntu0.18.04.1 [52.8 MB]
-Get:34 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxmlb1 amd64 0.1.8-1~ubuntu18.04.1 [45.6 kB]
-Get:35 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 fwupd amd64 1.2.10-1ubuntu2~ubuntu18.04.3 [2,484 kB]
-Get:36 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 fwupd-signed amd64 1.10~ubuntu18.04.3+1.2.10-1ubuntu2~ubuntu18.04.3 [26.8 kB]
-Get:37 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 fwupdate-signed amd64 12-7~ubuntu18.04.3 [3,032 B]
-Get:38 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 fwupdate amd64 12-7~ubuntu18.04.3 [3,400 B]
-Get:39 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libibus-1.0-5 amd64 1.5.17-3ubuntu5.3 [133 kB]
-Get:40 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ibus amd64 1.5.17-3ubuntu5.3 [4,553 kB]
-Get:41 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gir1.2-ibus-1.0 amd64 1.5.17-3ubuntu5.3 [66.5 kB]
-Get:42 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwebkit2gtk-4.0-37 amd64 2.28.2-0ubuntu0.18.04.1 [12.3 MB]
-Get:43 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libjavascriptcoregtk-4.0-18 amd64 2.28.2-0ubuntu0.18.04.1 [5,265 kB]
-Get:44 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwayland-client0 amd64 1.16.0-1ubuntu1.1~18.04.3 [23.6 kB]
-Get:45 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwayland-egl1 amd64 1.16.0-1ubuntu1.1~18.04.3 [5,464 B]
-Get:46 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwayland-server0 amd64 1.16.0-1ubuntu1.1~18.04.3 [29.6 kB]
-Get:47 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gir1.2-webkit2-4.0 amd64 2.28.2-0ubuntu0.18.04.1 [71.3 kB]
-Get:48 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gir1.2-javascriptcoregtk-4.0 amd64 2.28.2-0ubuntu0.18.04.1 [22.0 kB]
-Get:49 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gir1.2-snapd-1 amd64 1.49-0ubuntu0.18.04.2 [12.9 kB]
-Get:50 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libsnapd-glib1 amd64 1.49-0ubuntu0.18.04.2 [85.5 kB]
-Get:51 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ibus-gtk amd64 1.5.17-3ubuntu5.3 [14.9 kB]
-Get:52 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ibus-gtk3 amd64 1.5.17-3ubuntu5.3 [15.5 kB]
-Get:53 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libbluetooth3 amd64 5.48-0ubuntu3.4 [64.0 kB]
-Get:54 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm-amdgpu1 amd64 2.4.99-1ubuntu1~18.04.2 [18.2 kB]
-Get:55 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm-intel1 amd64 2.4.99-1ubuntu1~18.04.2 [59.9 kB]
-Get:56 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm-nouveau2 amd64 2.4.99-1ubuntu1~18.04.2 [16.5 kB]
-Get:57 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm-radeon1 amd64 2.4.99-1ubuntu1~18.04.2 [21.7 kB]
-Get:58 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libllvm9 amd64 1:9-2~ubuntu18.04.2 [14.8 MB]
-Get:59 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libexif12 amd64 0.6.21-4ubuntu0.2 [77.3 kB]
-Get:60 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libexiv2-14 amd64 0.25-3.1ubuntu0.18.04.5 [677 kB]
-Get:61 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwinpr2-2 amd64 2.1.1+dfsg1-0ubuntu0.18.04.1 [315 kB]
-Get:62 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libfreerdp2-2 amd64 2.1.1+dfsg1-0ubuntu0.18.04.1 [519 kB]
-Get:63 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libfreerdp-client2-2 amd64 2.1.1+dfsg1-0ubuntu0.18.04.1 [257 kB]
-Get:64 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgd3 amd64 2.2.5-4ubuntu0.4 [119 kB]
-Get:65 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libopenexr22 amd64 2.2.0-11.1ubuntu1.2 [561 kB]
-Get:66 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libssh-4 amd64 0.8.0~20170825.94fa1e38-1ubuntu0.6 [169 kB]
-Get:67 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwayland-cursor0 amd64 1.16.0-1ubuntu1.1~18.04.3 [10.1 kB]
-Get:68 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-firmware all 1.173.18 [75.1 MB]
-Get:69 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-modules-5.3.0-53-generic amd64 5.3.0-53.47~18.04.1 [14.2 MB]
-Get:70 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-image-5.3.0-53-generic amd64 5.3.0-53.47~18.04.1 [8,738 kB]
-Get:71 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-modules-extra-5.3.0-53-generic amd64 5.3.0-53.47~18.04.1 [37.5 MB]
-Get:72 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-generic-hwe-18.04 amd64 5.3.0.53.110 [1,936 B]
-Get:73 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-image-generic-hwe-18.04 amd64 5.3.0.53.110 [2,728 B]
-Get:74 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-headers-5.3.0-53 all 5.3.0-53.47~18.04.1 [11.0 MB]
-Get:75 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-headers-5.3.0-53-generic amd64 5.3.0-53.47~18.04.1 [1,215 kB]
-Get:76 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-headers-generic-hwe-18.04 amd64 5.3.0.53.110 [2,688 B]
-Get:77 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ppp amd64 2.4.7-2+2ubuntu1.2 [328 kB]
-Get:78 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-pil amd64 5.1.0-1ubuntu0.2 [329 kB]
-Get:79 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-renderpm amd64 3.4.0-3ubuntu0.1 [33.5 kB]
-Get:80 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-reportlab-accel amd64 3.4.0-3ubuntu0.1 [18.4 kB]
-Get:81 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-reportlab all 3.4.0-3ubuntu0.1 [473 kB]
+Get:22 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python-apt-common all 1.6.5ubuntu0.3 [16.8 kB]
+Get:23 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-apt amd64 1.6.5ubuntu0.3 [149 kB]
+Get:24 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 rsync amd64 3.1.2-2.1ubuntu1.1 [334 kB]
+Get:25 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.30-21ubuntu1~18.04.3 [1,839 kB]
+Get:26 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils-common amd64 2.30-21ubuntu1~18.04.3 [196 kB]
+Get:27 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils amd64 2.30-21ubuntu1~18.04.3 [3,388 B]
+Get:28 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libbinutils amd64 2.30-21ubuntu1~18.04.3 [488 kB]
+Get:29 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 bluez-cups amd64 5.48-0ubuntu3.4 [64.0 kB]
+Get:30 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 bluez-obexd amd64 5.48-0ubuntu3.4 [167 kB]
+Get:31 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 cpp-7 amd64 7.5.0-3ubuntu1~18.04 [8,591 kB]
+Get:32 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc-7-base amd64 7.5.0-3ubuntu1~18.04 [18.3 kB]
+Get:33 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libarchive13 amd64 3.2.2-3.1ubuntu0.6 [288 kB]
+Get:34 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 file-roller amd64 3.28.0-1ubuntu1.2 [320 kB]
+Get:35 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 firefox amd64 77.0.1+build1-0ubuntu0.18.04.1 [52.8 MB]
+Get:36 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxmlb1 amd64 0.1.8-1~ubuntu18.04.1 [45.6 kB]
+Get:37 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 fwupd amd64 1.2.10-1ubuntu2~ubuntu18.04.3 [2,484 kB]
+Get:38 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 fwupd-signed amd64 1.10~ubuntu18.04.3+1.2.10-1ubuntu2~ubuntu18.04.3 [26.8 kB]
+Get:39 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 fwupdate-signed amd64 12-7~ubuntu18.04.3 [3,032 B]
+Get:40 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 fwupdate amd64 12-7~ubuntu18.04.3 [3,400 B]
+Get:41 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libibus-1.0-5 amd64 1.5.17-3ubuntu5.3 [133 kB]
+Get:42 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ibus amd64 1.5.17-3ubuntu5.3 [4,553 kB]
+Get:43 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gir1.2-ibus-1.0 amd64 1.5.17-3ubuntu5.3 [66.5 kB]
+Get:44 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwebkit2gtk-4.0-37 amd64 2.28.2-0ubuntu0.18.04.1 [12.3 MB]
+Get:45 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libjavascriptcoregtk-4.0-18 amd64 2.28.2-0ubuntu0.18.04.1 [5,265 kB]
+Get:46 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwayland-client0 amd64 1.16.0-1ubuntu1.1~18.04.3 [23.6 kB]
+Get:47 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwayland-egl1 amd64 1.16.0-1ubuntu1.1~18.04.3 [5,464 B]
+Get:48 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwayland-server0 amd64 1.16.0-1ubuntu1.1~18.04.3 [29.6 kB]
+Get:49 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gir1.2-webkit2-4.0 amd64 2.28.2-0ubuntu0.18.04.1 [71.3 kB]
+Get:50 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gir1.2-javascriptcoregtk-4.0 amd64 2.28.2-0ubuntu0.18.04.1 [22.0 kB]
+Get:51 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gir1.2-snapd-1 amd64 1.49-0ubuntu0.18.04.2 [12.9 kB]
+Get:52 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libsnapd-glib1 amd64 1.49-0ubuntu0.18.04.2 [85.5 kB]
+Get:53 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ibus-gtk amd64 1.5.17-3ubuntu5.3 [14.9 kB]
+Get:54 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ibus-gtk3 amd64 1.5.17-3ubuntu5.3 [15.5 kB]
+Get:55 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libbluetooth3 amd64 5.48-0ubuntu3.4 [64.0 kB]
+Get:56 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm-amdgpu1 amd64 2.4.99-1ubuntu1~18.04.2 [18.2 kB]
+Get:57 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm-intel1 amd64 2.4.99-1ubuntu1~18.04.2 [59.9 kB]
+Get:58 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm-nouveau2 amd64 2.4.99-1ubuntu1~18.04.2 [16.5 kB]
+Get:59 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm-radeon1 amd64 2.4.99-1ubuntu1~18.04.2 [21.7 kB]
+Get:60 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libllvm9 amd64 1:9-2~ubuntu18.04.2 [14.8 MB]
+Get:61 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libexif12 amd64 0.6.21-4ubuntu0.2 [77.3 kB]
+Get:62 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libexiv2-14 amd64 0.25-3.1ubuntu0.18.04.5 [677 kB]
+Get:63 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwinpr2-2 amd64 2.1.1+dfsg1-0ubuntu0.18.04.1 [315 kB]
+Get:64 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libfreerdp2-2 amd64 2.1.1+dfsg1-0ubuntu0.18.04.1 [519 kB]
+Get:65 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libfreerdp-client2-2 amd64 2.1.1+dfsg1-0ubuntu0.18.04.1 [257 kB]
+Get:66 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgd3 amd64 2.2.5-4ubuntu0.4 [119 kB]
+Get:67 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libopenexr22 amd64 2.2.0-11.1ubuntu1.2 [561 kB]
+Get:68 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libssh-4 amd64 0.8.0~20170825.94fa1e38-1ubuntu0.6 [169 kB]
+Get:69 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwayland-cursor0 amd64 1.16.0-1ubuntu1.1~18.04.3 [10.1 kB]
+Get:70 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-firmware all 1.173.18 [75.1 MB]
+Get:71 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-modules-5.3.0-53-generic amd64 5.3.0-53.47~18.04.1 [14.2 MB]
+Get:72 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-image-5.3.0-53-generic amd64 5.3.0-53.47~18.04.1 [8,738 kB]
+Get:73 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-modules-extra-5.3.0-53-generic amd64 5.3.0-53.47~18.04.1 [37.5 MB]
+Get:74 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-generic-hwe-18.04 amd64 5.3.0.53.110 [1,936 B]
+Get:75 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-image-generic-hwe-18.04 amd64 5.3.0.53.110 [2,728 B]
+Get:76 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-headers-5.3.0-53 all 5.3.0-53.47~18.04.1 [11.0 MB]
+Get:77 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-headers-5.3.0-53-generic amd64 5.3.0-53.47~18.04.1 [1,215 kB]
+Get:78 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-headers-generic-hwe-18.04 amd64 5.3.0.53.110 [2,688 B]
+Get:79 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ppp amd64 2.4.7-2+2ubuntu1.2 [328 kB]
+Get:80 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-pil amd64 5.1.0-1ubuntu0.2 [329 kB]
+Get:81 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-renderpm amd64 3.4.0-3ubuntu0.1 [33.5 kB]
+Get:82 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-reportlab-accel amd64 3.4.0-3ubuntu0.1 [18.4 kB]
+Get:83 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-reportlab all 3.4.0-3ubuntu0.1 [473 kB]
 Preconfiguring packages ...
-Fetched 266 MB in 4min 32s (979 kB/s)
+Fetched 267 MB in 4min 15s (1,046 kB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 115129 files and directories currently installed.)
 Preparing to unpack .../bsdutils_1%3a2.31.1-0.4ubuntu3.6_amd64.deb ...
 Unpacking bsdutils (1:2.31.1-0.4ubuntu3.6) over (1:2.31.1-0.4ubuntu3.5) ...
@@ -389,240 +402,245 @@ Preparing to unpack .../063-libdrm-common_2.4.99-1ubuntu1~18.04.2_all.deb ...
 Unpacking libdrm-common (2.4.99-1ubuntu1~18.04.2) over (2.4.99-1ubuntu1~18.04.1) ...
 Preparing to unpack .../064-libdrm2_2.4.99-1ubuntu1~18.04.2_amd64.deb ...
 Unpacking libdrm2:amd64 (2.4.99-1ubuntu1~18.04.2) over (2.4.99-1ubuntu1~18.04.1) ...
-Preparing to unpack .../065-aptdaemon_1.1.1+bzr982-0ubuntu19.3_all.deb ...
+Preparing to unpack .../065-python-apt-common_1.6.5ubuntu0.3_all.deb ...
+Unpacking python-apt-common (1.6.5ubuntu0.3) over (1.6.5ubuntu0.2) ...
+Preparing to unpack .../066-python3-apt_1.6.5ubuntu0.3_amd64.deb ...
+Unpacking python3-apt (1.6.5ubuntu0.3) over (1.6.5ubuntu0.2) ...
+Preparing to unpack .../067-aptdaemon_1.1.1+bzr982-0ubuntu19.3_all.deb ...
 Unpacking aptdaemon (1.1.1+bzr982-0ubuntu19.3) over (1.1.1+bzr982-0ubuntu19.2) ...
-Preparing to unpack .../066-python3-aptdaemon.gtk3widgets_1.1.1+bzr982-0ubuntu19.3_all.deb ...
+Preparing to unpack .../068-python3-aptdaemon.gtk3widgets_1.1.1+bzr982-0ubuntu19.3_all.deb ...
 Unpacking python3-aptdaemon.gtk3widgets (1.1.1+bzr982-0ubuntu19.3) over (1.1.1+bzr982-0ubuntu19.2) ...
-Preparing to unpack .../067-python3-aptdaemon_1.1.1+bzr982-0ubuntu19.3_all.deb ...
+Preparing to unpack .../069-python3-aptdaemon_1.1.1+bzr982-0ubuntu19.3_all.deb ...
 Unpacking python3-aptdaemon (1.1.1+bzr982-0ubuntu19.3) over (1.1.1+bzr982-0ubuntu19.2) ...
-Preparing to unpack .../068-aptdaemon-data_1.1.1+bzr982-0ubuntu19.3_all.deb ...
+Preparing to unpack .../070-aptdaemon-data_1.1.1+bzr982-0ubuntu19.3_all.deb ...
 Unpacking aptdaemon-data (1.1.1+bzr982-0ubuntu19.3) over (1.1.1+bzr982-0ubuntu19.2) ...
-Preparing to unpack .../069-python3-update-manager_1%3a18.04.11.12_all.deb ...
+Preparing to unpack .../071-python3-update-manager_1%3a18.04.11.12_all.deb ...
 Unpacking python3-update-manager (1:18.04.11.12) over (1:18.04.11.10) ...
-Preparing to unpack .../070-update-manager-core_1%3a18.04.11.12_all.deb ...
+Preparing to unpack .../072-update-manager-core_1%3a18.04.11.12_all.deb ...
 Unpacking update-manager-core (1:18.04.11.12) over (1:18.04.11.10) ...
-Preparing to unpack .../071-update-manager_1%3a18.04.11.12_all.deb ...
+Preparing to unpack .../073-update-manager_1%3a18.04.11.12_all.deb ...
 Unpacking update-manager (1:18.04.11.12) over (1:18.04.11.10) ...
-Preparing to unpack .../072-rsync_3.1.2-2.1ubuntu1.1_amd64.deb ...
+Preparing to unpack .../074-rsync_3.1.2-2.1ubuntu1.1_amd64.deb ...
 Unpacking rsync (3.1.2-2.1ubuntu1.1) over (3.1.2-2.1ubuntu1) ...
-Preparing to unpack .../073-grub-pc_2.02-2ubuntu8.15_amd64.deb ...
+Preparing to unpack .../075-grub-pc_2.02-2ubuntu8.15_amd64.deb ...
 Unpacking grub-pc (2.02-2ubuntu8.15) over (2.02-2ubuntu8.14) ...
-Preparing to unpack .../074-grub2-common_2.02-2ubuntu8.15_amd64.deb ...
+Preparing to unpack .../076-grub2-common_2.02-2ubuntu8.15_amd64.deb ...
 Unpacking grub2-common (2.02-2ubuntu8.15) over (2.02-2ubuntu8.14) ...
-Preparing to unpack .../075-grub-pc-bin_2.02-2ubuntu8.15_amd64.deb ...
+Preparing to unpack .../077-grub-pc-bin_2.02-2ubuntu8.15_amd64.deb ...
 Unpacking grub-pc-bin (2.02-2ubuntu8.15) over (2.02-2ubuntu8.14) ...
-Preparing to unpack .../076-grub-common_2.02-2ubuntu8.15_amd64.deb ...
+Preparing to unpack .../078-grub-common_2.02-2ubuntu8.15_amd64.deb ...
 Unpacking grub-common (2.02-2ubuntu8.15) over (2.02-2ubuntu8.14) ...
-Preparing to unpack .../077-python3-problem-report_2.20.9-0ubuntu7.15_all.deb ...
+Preparing to unpack .../079-python3-problem-report_2.20.9-0ubuntu7.15_all.deb ...
 Unpacking python3-problem-report (2.20.9-0ubuntu7.15) over (2.20.9-0ubuntu7.9) ...
-Preparing to unpack .../078-python3-apport_2.20.9-0ubuntu7.15_all.deb ...
+Preparing to unpack .../080-python3-apport_2.20.9-0ubuntu7.15_all.deb ...
 Unpacking python3-apport (2.20.9-0ubuntu7.15) over (2.20.9-0ubuntu7.9) ...
-Preparing to unpack .../079-apport_2.20.9-0ubuntu7.15_all.deb ...
+Preparing to unpack .../081-apport_2.20.9-0ubuntu7.15_all.deb ...
 Unpacking apport (2.20.9-0ubuntu7.15) over (2.20.9-0ubuntu7.9) ...
-Preparing to unpack .../080-apport-gtk_2.20.9-0ubuntu7.15_all.deb ...
+Preparing to unpack .../082-apport-gtk_2.20.9-0ubuntu7.15_all.deb ...
 Unpacking apport-gtk (2.20.9-0ubuntu7.15) over (2.20.9-0ubuntu7.9) ...
-Preparing to unpack .../081-binutils-x86-64-linux-gnu_2.30-21ubuntu1~18.04.3_amd64.deb ...
+Preparing to unpack .../083-binutils-x86-64-linux-gnu_2.30-21ubuntu1~18.04.3_amd64.deb ...
 Unpacking binutils-x86-64-linux-gnu (2.30-21ubuntu1~18.04.3) over (2.30-21ubuntu1~18.04.2) ...
-Preparing to unpack .../082-binutils-common_2.30-21ubuntu1~18.04.3_amd64.deb ...
+Preparing to unpack .../084-binutils-common_2.30-21ubuntu1~18.04.3_amd64.deb ...
 Unpacking binutils-common:amd64 (2.30-21ubuntu1~18.04.3) over (2.30-21ubuntu1~18.04.2) ...
-Preparing to unpack .../083-binutils_2.30-21ubuntu1~18.04.3_amd64.deb ...
+Preparing to unpack .../085-binutils_2.30-21ubuntu1~18.04.3_amd64.deb ...
 Unpacking binutils (2.30-21ubuntu1~18.04.3) over (2.30-21ubuntu1~18.04.2) ...
-Preparing to unpack .../084-libbinutils_2.30-21ubuntu1~18.04.3_amd64.deb ...
+Preparing to unpack .../086-libbinutils_2.30-21ubuntu1~18.04.3_amd64.deb ...
 Unpacking libbinutils:amd64 (2.30-21ubuntu1~18.04.3) over (2.30-21ubuntu1~18.04.2) ...
-Preparing to unpack .../085-bluez-cups_5.48-0ubuntu3.4_amd64.deb ...
+Preparing to unpack .../087-bluez-cups_5.48-0ubuntu3.4_amd64.deb ...
 Unpacking bluez-cups (5.48-0ubuntu3.4) over (5.48-0ubuntu3.3) ...
-Preparing to unpack .../086-bluez-obexd_5.48-0ubuntu3.4_amd64.deb ...
+Preparing to unpack .../088-bluez-obexd_5.48-0ubuntu3.4_amd64.deb ...
 Unpacking bluez-obexd (5.48-0ubuntu3.4) over (5.48-0ubuntu3.3) ...
-Preparing to unpack .../087-cpp-7_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Preparing to unpack .../089-cpp-7_7.5.0-3ubuntu1~18.04_amd64.deb ...
 Unpacking cpp-7 (7.5.0-3ubuntu1~18.04) over (7.4.0-1ubuntu1~18.04.1) ...
-Preparing to unpack .../088-gcc-7-base_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Preparing to unpack .../090-gcc-7-base_7.5.0-3ubuntu1~18.04_amd64.deb ...
 Unpacking gcc-7-base:amd64 (7.5.0-3ubuntu1~18.04) over (7.4.0-1ubuntu1~18.04.1) ...
-Preparing to unpack .../089-libarchive13_3.2.2-3.1ubuntu0.6_amd64.deb ...
+Preparing to unpack .../091-libarchive13_3.2.2-3.1ubuntu0.6_amd64.deb ...
 Unpacking libarchive13:amd64 (3.2.2-3.1ubuntu0.6) over (3.2.2-3.1ubuntu0.5) ...
-Preparing to unpack .../090-libjson-glib-1.0-common_1.4.2-3ubuntu0.18.04.1_all.deb ...
+Preparing to unpack .../092-libjson-glib-1.0-common_1.4.2-3ubuntu0.18.04.1_all.deb ...
 Unpacking libjson-glib-1.0-common (1.4.2-3ubuntu0.18.04.1) over (1.4.2-3) ...
-Preparing to unpack .../091-libjson-glib-1.0-0_1.4.2-3ubuntu0.18.04.1_amd64.deb ...
+Preparing to unpack .../093-libjson-glib-1.0-0_1.4.2-3ubuntu0.18.04.1_amd64.deb ...
 Unpacking libjson-glib-1.0-0:amd64 (1.4.2-3ubuntu0.18.04.1) over (1.4.2-3) ...
-Preparing to unpack .../092-file-roller_3.28.0-1ubuntu1.2_amd64.deb ...
+Preparing to unpack .../094-file-roller_3.28.0-1ubuntu1.2_amd64.deb ...
 Unpacking file-roller (3.28.0-1ubuntu1.2) over (3.28.0-1ubuntu1.1) ...
-Preparing to unpack .../093-firefox_77.0.1+build1-0ubuntu0.18.04.1_amd64.deb ...
+Preparing to unpack .../095-firefox_77.0.1+build1-0ubuntu0.18.04.1_amd64.deb ...
 Unpacking firefox (77.0.1+build1-0ubuntu0.18.04.1) over (72.0.2+build1-0ubuntu0.18.04.1) ...
-Preparing to unpack .../094-libfwupd2_1.2.10-1ubuntu2~ubuntu18.04.3_amd64.deb ...
+Preparing to unpack .../096-libfwupd2_1.2.10-1ubuntu2~ubuntu18.04.3_amd64.deb ...
 Unpacking libfwupd2:amd64 (1.2.10-1ubuntu2~ubuntu18.04.3) over (1.0.9-0ubuntu2) ...
 Selecting previously unselected package libxmlb1:amd64.
-Preparing to unpack .../095-libxmlb1_0.1.8-1~ubuntu18.04.1_amd64.deb ...
+Preparing to unpack .../097-libxmlb1_0.1.8-1~ubuntu18.04.1_amd64.deb ...
 Unpacking libxmlb1:amd64 (0.1.8-1~ubuntu18.04.1) ...
-Preparing to unpack .../096-fwupd_1.2.10-1ubuntu2~ubuntu18.04.3_amd64.deb ...
+Preparing to unpack .../098-fwupd_1.2.10-1ubuntu2~ubuntu18.04.3_amd64.deb ...
 Unpacking fwupd (1.2.10-1ubuntu2~ubuntu18.04.3) over (1.0.9-0ubuntu2) ...
 Selecting previously unselected package fwupd-signed.
-Preparing to unpack .../097-fwupd-signed_1.10~ubuntu18.04.3+1.2.10-1ubuntu2~ubuntu18.04.3_amd64.deb ...
+Preparing to unpack .../099-fwupd-signed_1.10~ubuntu18.04.3+1.2.10-1ubuntu2~ubuntu18.04.3_amd64.deb ...
 Unpacking fwupd-signed (1.10~ubuntu18.04.3+1.2.10-1ubuntu2~ubuntu18.04.3) ...
-Preparing to unpack .../098-fwupdate-signed_12-7~ubuntu18.04.3_amd64.deb ...
+Preparing to unpack .../100-fwupdate-signed_12-7~ubuntu18.04.3_amd64.deb ...
 Unpacking fwupdate-signed (12-7~ubuntu18.04.3) over (1.19bionic2+12-3bionic2) ...
-Preparing to unpack .../099-fwupdate_12-7~ubuntu18.04.3_amd64.deb ...
+Preparing to unpack .../101-fwupdate_12-7~ubuntu18.04.3_amd64.deb ...
 /var/lib/dpkg/tmp.ci/preinst: 8: /var/lib/dpkg/tmp.ci/preinst: dpkg-vendor: not found
 Unpacking fwupdate (12-7~ubuntu18.04.3) over (12-3bionic2) ...
-Preparing to unpack .../100-libibus-1.0-5_1.5.17-3ubuntu5.3_amd64.deb ...
+Preparing to unpack .../102-libibus-1.0-5_1.5.17-3ubuntu5.3_amd64.deb ...
 Unpacking libibus-1.0-5:amd64 (1.5.17-3ubuntu5.3) over (1.5.17-3ubuntu5.2) ...
-Preparing to unpack .../101-ibus_1.5.17-3ubuntu5.3_amd64.deb ...
+Preparing to unpack .../103-ibus_1.5.17-3ubuntu5.3_amd64.deb ...
 Unpacking ibus (1.5.17-3ubuntu5.3) over (1.5.17-3ubuntu5.2) ...
-Preparing to unpack .../102-gir1.2-ibus-1.0_1.5.17-3ubuntu5.3_amd64.deb ...
+Preparing to unpack .../104-gir1.2-ibus-1.0_1.5.17-3ubuntu5.3_amd64.deb ...
 Unpacking gir1.2-ibus-1.0:amd64 (1.5.17-3ubuntu5.3) over (1.5.17-3ubuntu5.2) ...
-Preparing to unpack .../103-libwebkit2gtk-4.0-37_2.28.2-0ubuntu0.18.04.1_amd64.deb ...
+Preparing to unpack .../105-libwebkit2gtk-4.0-37_2.28.2-0ubuntu0.18.04.1_amd64.deb ...
 Unpacking libwebkit2gtk-4.0-37:amd64 (2.28.2-0ubuntu0.18.04.1) over (2.26.3-0ubuntu0.18.04.1) ...
-Preparing to unpack .../104-libjavascriptcoregtk-4.0-18_2.28.2-0ubuntu0.18.04.1_amd64.deb ...
+Preparing to unpack .../106-libjavascriptcoregtk-4.0-18_2.28.2-0ubuntu0.18.04.1_amd64.deb ...
 Unpacking libjavascriptcoregtk-4.0-18:amd64 (2.28.2-0ubuntu0.18.04.1) over (2.26.3-0ubuntu0.18.04.1) ...
-Preparing to unpack .../105-libwayland-client0_1.16.0-1ubuntu1.1~18.04.3_amd64.deb ...
+Preparing to unpack .../107-libwayland-client0_1.16.0-1ubuntu1.1~18.04.3_amd64.deb ...
 Unpacking libwayland-client0:amd64 (1.16.0-1ubuntu1.1~18.04.3) over (1.16.0-1ubuntu1.1~18.04.1) ...
-Preparing to unpack .../106-libwayland-egl1_1.16.0-1ubuntu1.1~18.04.3_amd64.deb ...
+Preparing to unpack .../108-libwayland-egl1_1.16.0-1ubuntu1.1~18.04.3_amd64.deb ...
 Unpacking libwayland-egl1:amd64 (1.16.0-1ubuntu1.1~18.04.3) over (1.16.0-1ubuntu1.1~18.04.1) ...
-Preparing to unpack .../107-libwayland-server0_1.16.0-1ubuntu1.1~18.04.3_amd64.deb ...
+Preparing to unpack .../109-libwayland-server0_1.16.0-1ubuntu1.1~18.04.3_amd64.deb ...
 Unpacking libwayland-server0:amd64 (1.16.0-1ubuntu1.1~18.04.3) over (1.16.0-1ubuntu1.1~18.04.1) ...
-Preparing to unpack .../108-gir1.2-webkit2-4.0_2.28.2-0ubuntu0.18.04.1_amd64.deb ...
+Preparing to unpack .../110-gir1.2-webkit2-4.0_2.28.2-0ubuntu0.18.04.1_amd64.deb ...
 Unpacking gir1.2-webkit2-4.0:amd64 (2.28.2-0ubuntu0.18.04.1) over (2.26.3-0ubuntu0.18.04.1) ...
-Preparing to unpack .../109-gir1.2-javascriptcoregtk-4.0_2.28.2-0ubuntu0.18.04.1_amd64.deb ...
+Preparing to unpack .../111-gir1.2-javascriptcoregtk-4.0_2.28.2-0ubuntu0.18.04.1_amd64.deb ...
 Unpacking gir1.2-javascriptcoregtk-4.0:amd64 (2.28.2-0ubuntu0.18.04.1) over (2.26.3-0ubuntu0.18.04.1) ...
-Preparing to unpack .../110-gir1.2-json-1.0_1.4.2-3ubuntu0.18.04.1_amd64.deb ...
+Preparing to unpack .../112-gir1.2-json-1.0_1.4.2-3ubuntu0.18.04.1_amd64.deb ...
 Unpacking gir1.2-json-1.0:amd64 (1.4.2-3ubuntu0.18.04.1) over (1.4.2-3) ...
-Preparing to unpack .../111-libnm0_1.10.6-2ubuntu1.4_amd64.deb ...
+Preparing to unpack .../113-libnm0_1.10.6-2ubuntu1.4_amd64.deb ...
 Unpacking libnm0:amd64 (1.10.6-2ubuntu1.4) over (1.10.6-2ubuntu1.2) ...
-Preparing to unpack .../112-gir1.2-nm-1.0_1.10.6-2ubuntu1.4_amd64.deb ...
+Preparing to unpack .../114-gir1.2-nm-1.0_1.10.6-2ubuntu1.4_amd64.deb ...
 Unpacking gir1.2-nm-1.0:amd64 (1.10.6-2ubuntu1.4) over (1.10.6-2ubuntu1.2) ...
-Preparing to unpack .../113-gir1.2-snapd-1_1.49-0ubuntu0.18.04.2_amd64.deb ...
+Preparing to unpack .../115-gir1.2-snapd-1_1.49-0ubuntu0.18.04.2_amd64.deb ...
 Unpacking gir1.2-snapd-1:amd64 (1.49-0ubuntu0.18.04.2) over (1.49-0ubuntu0.18.04.1) ...
-Preparing to unpack .../114-libsnapd-glib1_1.49-0ubuntu0.18.04.2_amd64.deb ...
+Preparing to unpack .../116-libsnapd-glib1_1.49-0ubuntu0.18.04.2_amd64.deb ...
 Unpacking libsnapd-glib1:amd64 (1.49-0ubuntu0.18.04.2) over (1.49-0ubuntu0.18.04.1) ...
-Preparing to unpack .../115-gnome-software-plugin-snap_3.28.1-0ubuntu4.18.04.15_amd64.deb ...
+Preparing to unpack .../117-gnome-software-plugin-snap_3.28.1-0ubuntu4.18.04.15_amd64.deb ...
 Unpacking gnome-software-plugin-snap (3.28.1-0ubuntu4.18.04.15) over (3.28.1-0ubuntu4.18.04.14) ...
-Preparing to unpack .../116-gnome-software_3.28.1-0ubuntu4.18.04.15_amd64.deb ...
+Preparing to unpack .../118-gnome-software_3.28.1-0ubuntu4.18.04.15_amd64.deb ...
 Unpacking gnome-software (3.28.1-0ubuntu4.18.04.15) over (3.28.1-0ubuntu4.18.04.14) ...
-Preparing to unpack .../117-gnome-software-common_3.28.1-0ubuntu4.18.04.15_all.deb ...
+Preparing to unpack .../119-gnome-software-common_3.28.1-0ubuntu4.18.04.15_all.deb ...
 Unpacking gnome-software-common (3.28.1-0ubuntu4.18.04.15) over (3.28.1-0ubuntu4.18.04.14) ...
-Preparing to unpack .../118-software-properties-common_0.96.24.32.13_all.deb ...
+Preparing to unpack .../120-software-properties-common_0.96.24.32.13_all.deb ...
 Unpacking software-properties-common (0.96.24.32.13) over (0.96.24.32.12) ...
-Preparing to unpack .../119-software-properties-gtk_0.96.24.32.13_all.deb ...
+Preparing to unpack .../121-software-properties-gtk_0.96.24.32.13_all.deb ...
 Unpacking software-properties-gtk (0.96.24.32.13) over (0.96.24.32.12) ...
-Preparing to unpack .../120-python3-software-properties_0.96.24.32.13_all.deb ...
+Preparing to unpack .../122-python3-software-properties_0.96.24.32.13_all.deb ...
 Unpacking python3-software-properties (0.96.24.32.13) over (0.96.24.32.12) ...
-Preparing to unpack .../121-ibus-gtk_1.5.17-3ubuntu5.3_amd64.deb ...
+Preparing to unpack .../123-ibus-gtk_1.5.17-3ubuntu5.3_amd64.deb ...
 Unpacking ibus-gtk:amd64 (1.5.17-3ubuntu5.3) over (1.5.17-3ubuntu5.2) ...
-Preparing to unpack .../122-ibus-gtk3_1.5.17-3ubuntu5.3_amd64.deb ...
+Preparing to unpack .../124-ibus-gtk3_1.5.17-3ubuntu5.3_amd64.deb ...
 Unpacking ibus-gtk3:amd64 (1.5.17-3ubuntu5.3) over (1.5.17-3ubuntu5.2) ...
-Preparing to unpack .../123-libasound2_1.1.3-5ubuntu0.5_amd64.deb ...
+Preparing to unpack .../125-libasound2_1.1.3-5ubuntu0.5_amd64.deb ...
 Unpacking libasound2:amd64 (1.1.3-5ubuntu0.5) over (1.1.3-5ubuntu0.2) ...
-Preparing to unpack .../124-libasound2-data_1.1.3-5ubuntu0.5_all.deb ...
+Preparing to unpack .../126-libasound2-data_1.1.3-5ubuntu0.5_all.deb ...
 Unpacking libasound2-data (1.1.3-5ubuntu0.5) over (1.1.3-5ubuntu0.2) ...
-Preparing to unpack .../125-libbluetooth3_5.48-0ubuntu3.4_amd64.deb ...
+Preparing to unpack .../127-libbluetooth3_5.48-0ubuntu3.4_amd64.deb ...
 Unpacking libbluetooth3:amd64 (5.48-0ubuntu3.4) over (5.48-0ubuntu3.3) ...
-Preparing to unpack .../126-libdrm-amdgpu1_2.4.99-1ubuntu1~18.04.2_amd64.deb ...
+Preparing to unpack .../128-libdrm-amdgpu1_2.4.99-1ubuntu1~18.04.2_amd64.deb ...
 Unpacking libdrm-amdgpu1:amd64 (2.4.99-1ubuntu1~18.04.2) over (2.4.99-1ubuntu1~18.04.1) ...
-Preparing to unpack .../127-libdrm-intel1_2.4.99-1ubuntu1~18.04.2_amd64.deb ...
+Preparing to unpack .../129-libdrm-intel1_2.4.99-1ubuntu1~18.04.2_amd64.deb ...
 Unpacking libdrm-intel1:amd64 (2.4.99-1ubuntu1~18.04.2) over (2.4.99-1ubuntu1~18.04.1) ...
-Preparing to unpack .../128-libdrm-nouveau2_2.4.99-1ubuntu1~18.04.2_amd64.deb ...
+Preparing to unpack .../130-libdrm-nouveau2_2.4.99-1ubuntu1~18.04.2_amd64.deb ...
 Unpacking libdrm-nouveau2:amd64 (2.4.99-1ubuntu1~18.04.2) over (2.4.99-1ubuntu1~18.04.1) ...
-Preparing to unpack .../129-libdrm-radeon1_2.4.99-1ubuntu1~18.04.2_amd64.deb ...
+Preparing to unpack .../131-libdrm-radeon1_2.4.99-1ubuntu1~18.04.2_amd64.deb ...
 Unpacking libdrm-radeon1:amd64 (2.4.99-1ubuntu1~18.04.2) over (2.4.99-1ubuntu1~18.04.1) ...
-Preparing to unpack .../130-libegl-mesa0_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
+Preparing to unpack .../132-libegl-mesa0_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
 Unpacking libegl-mesa0:amd64 (19.2.8-0ubuntu0~18.04.3) over (19.2.8-0ubuntu0~18.04.1) ...
-Preparing to unpack .../131-libgbm1_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
+Preparing to unpack .../133-libgbm1_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
 Unpacking libgbm1:amd64 (19.2.8-0ubuntu0~18.04.3) over (19.2.8-0ubuntu0~18.04.1) ...
-Preparing to unpack .../132-libllvm9_1%3a9-2~ubuntu18.04.2_amd64.deb ...
+Preparing to unpack .../134-libllvm9_1%3a9-2~ubuntu18.04.2_amd64.deb ...
 Unpacking libllvm9:amd64 (1:9-2~ubuntu18.04.2) over (1:9-2~ubuntu18.04.1) ...
-Preparing to unpack .../133-libgl1-mesa-dri_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
+Preparing to unpack .../135-libgl1-mesa-dri_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
 Unpacking libgl1-mesa-dri:amd64 (19.2.8-0ubuntu0~18.04.3) over (19.2.8-0ubuntu0~18.04.1) ...
-Preparing to unpack .../134-libglx-mesa0_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
+Preparing to unpack .../136-libglx-mesa0_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
 Unpacking libglx-mesa0:amd64 (19.2.8-0ubuntu0~18.04.3) over (19.2.8-0ubuntu0~18.04.1) ...
-Preparing to unpack .../135-libglapi-mesa_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
+Preparing to unpack .../137-libglapi-mesa_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
 Unpacking libglapi-mesa:amd64 (19.2.8-0ubuntu0~18.04.3) over (19.2.8-0ubuntu0~18.04.1) ...
-Preparing to unpack .../136-libegl1-mesa_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
+Preparing to unpack .../138-libegl1-mesa_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
 Unpacking libegl1-mesa:amd64 (19.2.8-0ubuntu0~18.04.3) over (19.2.8-0ubuntu0~18.04.1) ...
-Preparing to unpack .../137-libexif12_0.6.21-4ubuntu0.2_amd64.deb ...
+Preparing to unpack .../139-libexif12_0.6.21-4ubuntu0.2_amd64.deb ...
 Unpacking libexif12:amd64 (0.6.21-4ubuntu0.2) over (0.6.21-4) ...
-Preparing to unpack .../138-libexiv2-14_0.25-3.1ubuntu0.18.04.5_amd64.deb ...
+Preparing to unpack .../140-libexiv2-14_0.25-3.1ubuntu0.18.04.5_amd64.deb ...
 Unpacking libexiv2-14:amd64 (0.25-3.1ubuntu0.18.04.5) over (0.25-3.1ubuntu0.18.04.4) ...
-Preparing to unpack .../139-libwinpr2-2_2.1.1+dfsg1-0ubuntu0.18.04.1_amd64.deb ...
+Preparing to unpack .../141-libwinpr2-2_2.1.1+dfsg1-0ubuntu0.18.04.1_amd64.deb ...
 Unpacking libwinpr2-2:amd64 (2.1.1+dfsg1-0ubuntu0.18.04.1) over (2.0.0~git20170725.1.1648deb+dfsg1-7ubuntu0.1) ...
-Preparing to unpack .../140-libfreerdp2-2_2.1.1+dfsg1-0ubuntu0.18.04.1_amd64.deb ...
+Preparing to unpack .../142-libfreerdp2-2_2.1.1+dfsg1-0ubuntu0.18.04.1_amd64.deb ...
 Unpacking libfreerdp2-2:amd64 (2.1.1+dfsg1-0ubuntu0.18.04.1) over (2.0.0~git20170725.1.1648deb+dfsg1-7ubuntu0.1) ...
-Preparing to unpack .../141-pulseaudio-module-bluetooth_1%3a11.1-1ubuntu7.8_amd64.deb ...
+Preparing to unpack .../143-pulseaudio-module-bluetooth_1%3a11.1-1ubuntu7.8_amd64.deb ...
 Unpacking pulseaudio-module-bluetooth (1:11.1-1ubuntu7.8) over (1:11.1-1ubuntu7.4) ...
-Preparing to unpack .../142-libpulsedsp_1%3a11.1-1ubuntu7.8_amd64.deb ...
+Preparing to unpack .../144-libpulsedsp_1%3a11.1-1ubuntu7.8_amd64.deb ...
 Unpacking libpulsedsp:amd64 (1:11.1-1ubuntu7.8) over (1:11.1-1ubuntu7.4) ...
-Preparing to unpack .../143-pulseaudio-utils_1%3a11.1-1ubuntu7.8_amd64.deb ...
+Preparing to unpack .../145-pulseaudio-utils_1%3a11.1-1ubuntu7.8_amd64.deb ...
 Unpacking pulseaudio-utils (1:11.1-1ubuntu7.8) over (1:11.1-1ubuntu7.4) ...
-Preparing to unpack .../144-pulseaudio_1%3a11.1-1ubuntu7.8_amd64.deb ...
+Preparing to unpack .../146-pulseaudio_1%3a11.1-1ubuntu7.8_amd64.deb ...
 Unpacking pulseaudio (1:11.1-1ubuntu7.8) over (1:11.1-1ubuntu7.4) ...
-Preparing to unpack .../145-libpulse-mainloop-glib0_1%3a11.1-1ubuntu7.8_amd64.deb ...
+Preparing to unpack .../147-libpulse-mainloop-glib0_1%3a11.1-1ubuntu7.8_amd64.deb ...
 Unpacking libpulse-mainloop-glib0:amd64 (1:11.1-1ubuntu7.8) over (1:11.1-1ubuntu7.4) ...
-Preparing to unpack .../146-libpulse0_1%3a11.1-1ubuntu7.8_amd64.deb ...
+Preparing to unpack .../148-libpulse0_1%3a11.1-1ubuntu7.8_amd64.deb ...
 Unpacking libpulse0:amd64 (1:11.1-1ubuntu7.8) over (1:11.1-1ubuntu7.4) ...
-Preparing to unpack .../147-libfreerdp-client2-2_2.1.1+dfsg1-0ubuntu0.18.04.1_amd64.deb ...
+Preparing to unpack .../149-libfreerdp-client2-2_2.1.1+dfsg1-0ubuntu0.18.04.1_amd64.deb ...
 Unpacking libfreerdp-client2-2:amd64 (2.1.1+dfsg1-0ubuntu0.18.04.1) over (2.0.0~git20170725.1.1648deb+dfsg1-7ubuntu0.1) ...
-Preparing to unpack .../148-libgd3_2.2.5-4ubuntu0.4_amd64.deb ...
+Preparing to unpack .../150-libgd3_2.2.5-4ubuntu0.4_amd64.deb ...
 Unpacking libgd3:amd64 (2.2.5-4ubuntu0.4) over (2.2.5-4ubuntu0.3) ...
-Preparing to unpack .../149-libgl1-mesa-glx_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
+Preparing to unpack .../151-libgl1-mesa-glx_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
 Unpacking libgl1-mesa-glx:amd64 (19.2.8-0ubuntu0~18.04.3) over (19.2.8-0ubuntu0~18.04.1) ...
-Preparing to unpack .../150-libopenexr22_2.2.0-11.1ubuntu1.2_amd64.deb ...
+Preparing to unpack .../152-libopenexr22_2.2.0-11.1ubuntu1.2_amd64.deb ...
 Unpacking libopenexr22:amd64 (2.2.0-11.1ubuntu1.2) over (2.2.0-11.1ubuntu1.1) ...
-Preparing to unpack .../151-libsgutils2-2_1.42-2ubuntu1.18.04.2_amd64.deb ...
+Preparing to unpack .../153-libsgutils2-2_1.42-2ubuntu1.18.04.2_amd64.deb ...
 Unpacking libsgutils2-2 (1.42-2ubuntu1.18.04.2) over (1.42-2ubuntu1.18.04.1) ...
-Preparing to unpack .../152-libssh-4_0.8.0~20170825.94fa1e38-1ubuntu0.6_amd64.deb ...
+Preparing to unpack .../154-libssh-4_0.8.0~20170825.94fa1e38-1ubuntu0.6_amd64.deb ...
 Unpacking libssh-4:amd64 (0.8.0~20170825.94fa1e38-1ubuntu0.6) over (0.8.0~20170825.94fa1e38-1ubuntu0.5) ...
-Preparing to unpack .../153-libwayland-cursor0_1.16.0-1ubuntu1.1~18.04.3_amd64.deb ...
+Preparing to unpack .../155-libwayland-cursor0_1.16.0-1ubuntu1.1~18.04.3_amd64.deb ...
 Unpacking libwayland-cursor0:amd64 (1.16.0-1ubuntu1.1~18.04.3) over (1.16.0-1ubuntu1.1~18.04.1) ...
-Preparing to unpack .../154-libwayland-egl1-mesa_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
+Preparing to unpack .../156-libwayland-egl1-mesa_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
 Unpacking libwayland-egl1-mesa:amd64 (19.2.8-0ubuntu0~18.04.3) over (19.2.8-0ubuntu0~18.04.1) ...
-Preparing to unpack .../155-libxatracker2_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
+Preparing to unpack .../157-libxatracker2_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
 Unpacking libxatracker2:amd64 (19.2.8-0ubuntu0~18.04.3) over (19.2.8-0ubuntu0~18.04.1) ...
-Preparing to unpack .../156-linux-firmware_1.173.18_all.deb ...
+Preparing to unpack .../158-linux-firmware_1.173.18_all.deb ...
 Unpacking linux-firmware (1.173.18) over (1.173.14) ...
 Selecting previously unselected package linux-modules-5.3.0-53-generic.
-Preparing to unpack .../157-linux-modules-5.3.0-53-generic_5.3.0-53.47~18.04.1_amd64.deb ...
+Preparing to unpack .../159-linux-modules-5.3.0-53-generic_5.3.0-53.47~18.04.1_amd64.deb ...
 Unpacking linux-modules-5.3.0-53-generic (5.3.0-53.47~18.04.1) ...
 Selecting previously unselected package linux-image-5.3.0-53-generic.
-Preparing to unpack .../158-linux-image-5.3.0-53-generic_5.3.0-53.47~18.04.1_amd64.deb ...
+Preparing to unpack .../160-linux-image-5.3.0-53-generic_5.3.0-53.47~18.04.1_amd64.deb ...
 Unpacking linux-image-5.3.0-53-generic (5.3.0-53.47~18.04.1) ...
 Selecting previously unselected package linux-modules-extra-5.3.0-53-generic.
-Preparing to unpack .../159-linux-modules-extra-5.3.0-53-generic_5.3.0-53.47~18.04.1_amd64.deb ...
+Preparing to unpack .../161-linux-modules-extra-5.3.0-53-generic_5.3.0-53.47~18.04.1_amd64.deb ...
 Unpacking linux-modules-extra-5.3.0-53-generic (5.3.0-53.47~18.04.1) ...
-Preparing to unpack .../160-linux-generic-hwe-18.04_5.3.0.53.110_amd64.deb ...
+Preparing to unpack .../162-linux-generic-hwe-18.04_5.3.0.53.110_amd64.deb ...
 Unpacking linux-generic-hwe-18.04 (5.3.0.53.110) over (5.3.0.28.96) ...
-Preparing to unpack .../161-linux-image-generic-hwe-18.04_5.3.0.53.110_amd64.deb ...
+Preparing to unpack .../163-linux-image-generic-hwe-18.04_5.3.0.53.110_amd64.deb ...
 Unpacking linux-image-generic-hwe-18.04 (5.3.0.53.110) over (5.3.0.28.96) ...
 Selecting previously unselected package linux-headers-5.3.0-53.
-Preparing to unpack .../162-linux-headers-5.3.0-53_5.3.0-53.47~18.04.1_all.deb ...
+Preparing to unpack .../164-linux-headers-5.3.0-53_5.3.0-53.47~18.04.1_all.deb ...
 Unpacking linux-headers-5.3.0-53 (5.3.0-53.47~18.04.1) ...
 Selecting previously unselected package linux-headers-5.3.0-53-generic.
-Preparing to unpack .../163-linux-headers-5.3.0-53-generic_5.3.0-53.47~18.04.1_amd64.deb ...
+Preparing to unpack .../165-linux-headers-5.3.0-53-generic_5.3.0-53.47~18.04.1_amd64.deb ...
 Unpacking linux-headers-5.3.0-53-generic (5.3.0-53.47~18.04.1) ...
-Preparing to unpack .../164-linux-headers-generic-hwe-18.04_5.3.0.53.110_amd64.deb ...
+Preparing to unpack .../166-linux-headers-generic-hwe-18.04_5.3.0.53.110_amd64.deb ...
 Unpacking linux-headers-generic-hwe-18.04 (5.3.0.53.110) over (5.3.0.28.96) ...
-Preparing to unpack .../165-network-manager_1.10.6-2ubuntu1.4_amd64.deb ...
+Preparing to unpack .../167-network-manager_1.10.6-2ubuntu1.4_amd64.deb ...
 Unpacking network-manager (1.10.6-2ubuntu1.4) over (1.10.6-2ubuntu1.2) ...
-Preparing to unpack .../166-ppp_2.4.7-2+2ubuntu1.2_amd64.deb ...
+Preparing to unpack .../168-ppp_2.4.7-2+2ubuntu1.2_amd64.deb ...
 Unpacking ppp (2.4.7-2+2ubuntu1.2) over (2.4.7-2+2ubuntu1.1) ...
-Preparing to unpack .../167-network-manager-config-connectivity-ubuntu_1.10.6-2ubuntu1.4_all.deb ...
+Preparing to unpack .../169-network-manager-config-connectivity-ubuntu_1.10.6-2ubuntu1.4_all.deb ...
 Unpacking network-manager-config-connectivity-ubuntu (1.10.6-2ubuntu1.4) over (1.10.6-2ubuntu1.2) ...
-Preparing to unpack .../168-python3-pil_5.1.0-1ubuntu0.2_amd64.deb ...
+Preparing to unpack .../170-python3-pil_5.1.0-1ubuntu0.2_amd64.deb ...
 Unpacking python3-pil:amd64 (5.1.0-1ubuntu0.2) over (5.1.0-1) ...
-Preparing to unpack .../169-python3-renderpm_3.4.0-3ubuntu0.1_amd64.deb ...
+Preparing to unpack .../171-python3-renderpm_3.4.0-3ubuntu0.1_amd64.deb ...
 Unpacking python3-renderpm:amd64 (3.4.0-3ubuntu0.1) over (3.4.0-3build1) ...
-Preparing to unpack .../170-python3-reportlab-accel_3.4.0-3ubuntu0.1_amd64.deb ...
+Preparing to unpack .../172-python3-reportlab-accel_3.4.0-3ubuntu0.1_amd64.deb ...
 Unpacking python3-reportlab-accel:amd64 (3.4.0-3ubuntu0.1) over (3.4.0-3build1) ...
-Preparing to unpack .../171-python3-reportlab_3.4.0-3ubuntu0.1_all.deb ...
+Preparing to unpack .../173-python3-reportlab_3.4.0-3ubuntu0.1_all.deb ...
 Unpacking python3-reportlab (3.4.0-3ubuntu0.1) over (3.4.0-3build1) ...
-Preparing to unpack .../172-rfkill_2.31.1-0.4ubuntu3.6_amd64.deb ...
+Preparing to unpack .../174-rfkill_2.31.1-0.4ubuntu3.6_amd64.deb ...
 Unpacking rfkill (2.31.1-0.4ubuntu3.6) over (2.31.1-0.4ubuntu3.5) ...
-Preparing to unpack .../173-ubuntu-software_3.28.1-0ubuntu4.18.04.15_all.deb ...
+Preparing to unpack .../175-ubuntu-software_3.28.1-0ubuntu4.18.04.15_all.deb ...
 Unpacking ubuntu-software (3.28.1-0ubuntu4.18.04.15) over (3.28.1-0ubuntu4.18.04.14) ...
-Preparing to unpack .../174-unattended-upgrades_1.1ubuntu1.18.04.14_all.deb ...
+Preparing to unpack .../176-unattended-upgrades_1.1ubuntu1.18.04.14_all.deb ...
 Unpacking unattended-upgrades (1.1ubuntu1.18.04.14) over (1.1ubuntu1.18.04.13) ...
-Preparing to unpack .../175-xserver-common_2%3a1.19.6-1ubuntu4.4_all.deb ...
+Preparing to unpack .../177-xserver-common_2%3a1.19.6-1ubuntu4.4_all.deb ...
 Unpacking xserver-common (2:1.19.6-1ubuntu4.4) over (2:1.19.6-1ubuntu4.3) ...
-Preparing to unpack .../176-xserver-xephyr_2%3a1.19.6-1ubuntu4.4_amd64.deb ...
+Preparing to unpack .../178-xserver-xephyr_2%3a1.19.6-1ubuntu4.4_amd64.deb ...
 Unpacking xserver-xephyr (2:1.19.6-1ubuntu4.4) over (2:1.19.6-1ubuntu4.3) ...
-Preparing to unpack .../177-xwayland_2%3a1.19.6-1ubuntu4.4_amd64.deb ...
+Preparing to unpack .../179-xwayland_2%3a1.19.6-1ubuntu4.4_amd64.deb ...
 Unpacking xwayland (2:1.19.6-1ubuntu4.4) over (2:1.19.6-1ubuntu4.3) ...
+Setting up python-apt-common (1.6.5ubuntu0.3) ...
 Setting up libgomp1:amd64 (8.4.0-1ubuntu1~18.04) ...
 Setting up libapt-inst2.0:amd64 (1.6.12ubuntu0.1) ...
 Setting up libnss-systemd:amd64 (237-3ubuntu10.41) ...
@@ -638,6 +656,7 @@ Setting up libjson-glib-1.0-common (1.4.2-3ubuntu0.18.04.1) ...
 Setting up xserver-common (2:1.19.6-1ubuntu4.4) ...
 Setting up python3-pil:amd64 (5.1.0-1ubuntu0.2) ...
 Setting up cups-server-common (2.2.7-1ubuntu2.8) ...
+Setting up python3-apt (1.6.5ubuntu0.3) ...
 Setting up linux-modules-5.3.0-53-generic (5.3.0-53.47~18.04.1) ...
 Setting up libnss-myhostname:amd64 (237-3ubuntu10.41) ...
 Setting up xxd (2:8.0.1453-1ubuntu1.3) ...
@@ -649,8 +668,8 @@ Setting up cups-common (2.2.7-1ubuntu2.8) ...
 Setting up tzdata (2020a-0ubuntu0.18.04) ...
 
 Current default time zone: 'Europe/London'
-Local time is now:      Thu Jun  4 20:02:48 BST 2020.
-Universal Time is now:  Thu Jun  4 19:02:48 UTC 2020.
+Local time is now:      Thu Jun  4 21:48:01 BST 2020.
+Universal Time is now:  Thu Jun  4 20:48:01 UTC 2020.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up systemd-sysv (237-3ubuntu10.41) ...
@@ -937,7 +956,7 @@ Need to get 373 kB of archives.
 After this operation, 1,038 kB of additional disk space will be used.
 Get:1 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcurl4 amd64 7.58.0-2ubuntu3.8 [214 kB]
 Get:2 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 curl amd64 7.58.0-2ubuntu3.8 [159 kB]
-Fetched 373 kB in 1s (597 kB/s)
+Fetched 373 kB in 1s (330 kB/s)
 Selecting previously unselected package libcurl4:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 151586 files and directories currently installed.)
 Preparing to unpack .../libcurl4_7.58.0-2ubuntu3.8_amd64.deb ...
@@ -979,8 +998,94 @@ Use 'sudo apt autoremove' to remove them.
 3. Updating Java Environment Variables
 --------------------------------------
 
-3. Updating Java Environment Variables
+1. Check dir
+------------------
+
+2. Installing Eclipse
+------------------
+
+3. Updating Eclipse Environment Variables
 --------------------------------------
+
+1. Updating System
+------------------
+Hit:1 http://gb.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:2 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:3 http://gb.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:4 http://gb.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up-to-date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libboost-date-time1.65.1
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1
+  libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5
+  libcolamd2 libdazzle-1.0-0 libe-book-0.1-1 libedataserverui-1.2-2 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libevent-2.1-6 libexiv2-14
+  libfreerdp-client2-2 libfreerdp2-2 libfwup1 libgc1c2 libgee-0.8-2
+  libgexiv2-2 libgom-1.0-0 libgpgmepp6 libgpod-common libgpod4
+  liblangtag-common liblangtag1 liblirc-client0 liblua5.3-0 libmediaart-2.0-0
+  libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5 libraw16 librevenge-0.0-0
+  libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwayland-egl1-mesa libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss
+  lp-solve media-player-info python3-mako python3-markupsafe syslinux
+  syslinux-common syslinux-legacy usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.58.0-2ubuntu3.8).
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libboost-date-time1.65.1
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1
+  libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5
+  libcolamd2 libdazzle-1.0-0 libe-book-0.1-1 libedataserverui-1.2-2 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libevent-2.1-6 libexiv2-14
+  libfreerdp-client2-2 libfreerdp2-2 libfwup1 libgc1c2 libgee-0.8-2
+  libgexiv2-2 libgom-1.0-0 libgpgmepp6 libgpod-common libgpod4
+  liblangtag-common liblangtag1 liblirc-client0 liblua5.3-0 libmediaart-2.0-0
+  libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5 libraw16 librevenge-0.0-0
+  libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwayland-egl1-mesa libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss
+  lp-solve media-player-info python3-mako python3-markupsafe syslinux
+  syslinux-common syslinux-legacy usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+tar is already the newest version (1.29b-2ubuntu0.1).
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libboost-date-time1.65.1
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1
+  libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5
+  libcolamd2 libdazzle-1.0-0 libe-book-0.1-1 libedataserverui-1.2-2 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libevent-2.1-6 libexiv2-14
+  libfreerdp-client2-2 libfreerdp2-2 libfwup1 libgc1c2 libgee-0.8-2
+  libgexiv2-2 libgom-1.0-0 libgpgmepp6 libgpod-common libgpod4
+  liblangtag-common liblangtag1 liblirc-client0 liblua5.3-0 libmediaart-2.0-0
+  libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5 libraw16 librevenge-0.0-0
+  libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwayland-egl1-mesa libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss
+  lp-solve media-player-info python3-mako python3-markupsafe syslinux
+  syslinux-common syslinux-legacy usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
+
+2. Installing Java
+------------------
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -1043,7 +1148,7 @@ Get:20 http://gb.archive.ubuntu.com/ubuntu bionic/main amd64 libxt-dev amd64 1:1
 Get:21 http://gb.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 openjdk-8-jre amd64 8u252-b09-1~18.04 [69.8 kB]
 Get:22 http://gb.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 openjdk-8-jdk-headless amd64 8u252-b09-1~18.04 [8,250 kB]
 Get:23 http://gb.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 openjdk-8-jdk amd64 8u252-b09-1~18.04 [1,622 kB]
-Fetched 43.2 MB in 1min 3s (685 kB/s)
+Fetched 43.2 MB in 1min 12s (603 kB/s)
 Selecting previously unselected package java-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 151599 files and directories currently installed.)
 Preparing to unpack .../00-java-common_0.68ubuntu1~18.04.1_all.deb ...
@@ -1326,4 +1431,1151 @@ Processing triggers for mime-support (3.60ubuntu1) ...
 Processing triggers for desktop-file-utils (0.23-1ubuntu3.18.04.2) ...
 
 3. Updating Java Environment Variables
+--------------------------------------
+
+1. Check dir
+------------------
+
+2. Installing Eclipse
+------------------
+
+3. Updating Eclipse Environment Variables
+--------------------------------------
+
+1. Updating System
+------------------
+Hit:1 http://gb.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:2 http://gb.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:3 http://gb.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up-to-date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libboost-date-time1.65.1
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1
+  libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5
+  libcolamd2 libdazzle-1.0-0 libe-book-0.1-1 libedataserverui-1.2-2 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libevent-2.1-6 libexiv2-14
+  libfreerdp-client2-2 libfreerdp2-2 libfwup1 libgc1c2 libgee-0.8-2
+  libgexiv2-2 libgom-1.0-0 libgpgmepp6 libgpod-common libgpod4
+  liblangtag-common liblangtag1 liblirc-client0 liblua5.3-0 libmediaart-2.0-0
+  libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5 libraw16 librevenge-0.0-0
+  libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwayland-egl1-mesa libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss
+  lp-solve media-player-info python3-mako python3-markupsafe syslinux
+  syslinux-common syslinux-legacy usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.58.0-2ubuntu3.8).
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libboost-date-time1.65.1
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1
+  libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5
+  libcolamd2 libdazzle-1.0-0 libe-book-0.1-1 libedataserverui-1.2-2 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libevent-2.1-6 libexiv2-14
+  libfreerdp-client2-2 libfreerdp2-2 libfwup1 libgc1c2 libgee-0.8-2
+  libgexiv2-2 libgom-1.0-0 libgpgmepp6 libgpod-common libgpod4
+  liblangtag-common liblangtag1 liblirc-client0 liblua5.3-0 libmediaart-2.0-0
+  libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5 libraw16 librevenge-0.0-0
+  libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwayland-egl1-mesa libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss
+  lp-solve media-player-info python3-mako python3-markupsafe syslinux
+  syslinux-common syslinux-legacy usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+tar is already the newest version (1.29b-2ubuntu0.1).
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libboost-date-time1.65.1
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1
+  libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5
+  libcolamd2 libdazzle-1.0-0 libe-book-0.1-1 libedataserverui-1.2-2 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libevent-2.1-6 libexiv2-14
+  libfreerdp-client2-2 libfreerdp2-2 libfwup1 libgc1c2 libgee-0.8-2
+  libgexiv2-2 libgom-1.0-0 libgpgmepp6 libgpod-common libgpod4
+  liblangtag-common liblangtag1 liblirc-client0 liblua5.3-0 libmediaart-2.0-0
+  libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5 libraw16 librevenge-0.0-0
+  libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwayland-egl1-mesa libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss
+  lp-solve media-player-info python3-mako python3-markupsafe syslinux
+  syslinux-common syslinux-legacy usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
+
+2. Installing Java
+------------------
+Reading package lists...
+Building dependency tree...
+Reading state information...
+openjdk-8-jdk is already the newest version (8u252-b09-1~18.04).
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libboost-date-time1.65.1
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1
+  libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5
+  libcolamd2 libdazzle-1.0-0 libe-book-0.1-1 libedataserverui-1.2-2 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libevent-2.1-6 libexiv2-14
+  libfreerdp-client2-2 libfreerdp2-2 libfwup1 libgc1c2 libgee-0.8-2
+  libgexiv2-2 libgom-1.0-0 libgpgmepp6 libgpod-common libgpod4
+  liblangtag-common liblangtag1 liblirc-client0 liblua5.3-0 libmediaart-2.0-0
+  libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5 libraw16 librevenge-0.0-0
+  libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwayland-egl1-mesa libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss
+  lp-solve media-player-info python3-mako python3-markupsafe syslinux
+  syslinux-common syslinux-legacy usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
+
+3. Updating Java Environment Variables
+--------------------------------------
+
+1. Check dir
+------------------
+
+2. Installing Eclipse
+------------------
+eclipse-installer/
+eclipse-installer/p2/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/.data/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/.data/org.eclipse.equinox.internal.p2.touchpoint.eclipse.actions/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/.data/org.eclipse.equinox.internal.p2.touchpoint.eclipse.actions/jvmargs
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/1584350493860.profile.gz
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/.lock
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/1584350493862.profile.gz
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/1584350495082.profile.gz
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/1584350495430.profile.gz
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/.settings/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/.settings/org.eclipse.equinox.p2.metadata.repository.prefs
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/.settings/org.eclipse.equinox.p2.artifact.repository.prefs
+eclipse-installer/p2/org.eclipse.equinox.p2.core/
+eclipse-installer/p2/org.eclipse.equinox.p2.core/cache/
+eclipse-installer/p2/org.eclipse.equinox.p2.core/cache/binary/
+eclipse-installer/p2/org.eclipse.equinox.p2.core/cache/binary/org.eclipse.rcp_root_4.15.0.v20200305-0155
+eclipse-installer/p2/org.eclipse.equinox.p2.core/cache/binary/org.eclipse.oomph.setup.installer.product.executable.gtk.linux.x86_64_1.16.0.v20200309-1218
+eclipse-installer/p2/org.eclipse.equinox.p2.core/cache/artifacts.xml
+eclipse-installer/plugins/
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/META-INF/
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/META-INF/MANIFEST.MF
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/META-INF/ECLIPSE_.SF
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/META-INF/ECLIPSE_.RSA
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/launcher.gtk.linux.x86_64.properties
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/eclipse_1801.so
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/about.html
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/META-INF/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/META-INF/MANIFEST.MF
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/META-INF/ECLIPSE_.SF
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/META-INF/ECLIPSE_.RSA
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/security/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/security/linux/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/security/linux/nls/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/security/linux/nls/messages.properties
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/security/linux/nls/LinuxPasswordProviderMessages.class
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/security/linux/LinuxPasswordProvider.class
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/libkeystorelinuxnative.so
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/.api_description
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/about.html
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/fragment.xml
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/fragment.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/META-INF/
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/META-INF/MANIFEST.MF
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/META-INF/ECLIPSE_.SF
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/META-INF/ECLIPSE_.RSA
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_migrate48.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/ov_wbbasics48.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_updates48.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_eclplatform48.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/arrow.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_eclcommunity48_hov.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_eclplatform48_hov.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/ov_wbbasics48_hov.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_eclcommunity48.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_updates48_hov.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_migrate48_hov.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winXPOlive.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winXPTSFrame.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winXPBluHandle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/macGrey.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/gtkHandle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/macTSFrame.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winClassicHandle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/win7.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/dragHandle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winXPBluTSFrame.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winClassicTSFrame.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/win7Handle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/win7TSFrame.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/gtkTSFrame.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/macHandle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winXPBlue.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winXPHandle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/overview.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/overview.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/migrate.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/whatsnew.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/migrate.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/whatsnew.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/whatsnewExtensionContent2.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/migrateExtensionContent.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/whatsnewExtensionContent3.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/whatsnewExtensionContent1.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/overviewExtensionContent.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/plugin_customization.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse16.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse48.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/macosx_narrow_book.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/plugin.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/narrow_book.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse512.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse32.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse_lg.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/introData.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro-eclipse.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/plugin_customization.ini
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/about.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse24.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/platform.jar
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/disabled_book.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/splash.bmp
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/about.mappings
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/about.ini
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/book.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse128.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse64.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/plugin.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/about.html
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/LegacyIDE.e4xmi
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse1024.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/helpData.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse256.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse22.png
+eclipse-installer/plugins/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218.jar
+eclipse-installer/plugins/org.eclipse.oomph.p2.edit_1.12.0.v20200202-1112.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.ui.questionnaire_1.10.0.v20180706-1242.jar
+eclipse-installer/plugins/org.eclipse.oomph.p2_1.12.0.v20200203-0955.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.edit_1.14.0.v20190704-1252.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup_1.16.0.v20200309-0628.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.core_1.16.0.v20200219-0856.jar
+eclipse-installer/plugins/org.eclipse.oomph.base.edit_1.12.0.v20190702-1454.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.doc_1.11.0.v20200204-0711.jar
+eclipse-installer/plugins/org.eclipse.oomph.jreinfo_1.12.0.v20191228-0803.jar
+eclipse-installer/plugins/org.eclipse.oomph.base_1.13.0.v20200203-0955.jar
+eclipse-installer/plugins/org.eclipse.oomph.p2.ui_1.13.0.v20200226-1838.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.p2.edit_1.12.0.v20200202-1112.jar
+eclipse-installer/plugins/org.eclipse.oomph.preferences_1.11.0.v20190920-0437.jar
+eclipse-installer/plugins/org.eclipse.oomph.util.doc_1.11.0.v20200204-0711.jar
+eclipse-installer/plugins/org.eclipse.oomph.p2.core_1.15.0.v20200307-0636.jar
+eclipse-installer/plugins/org.eclipse.oomph.ui_1.13.0.v20191221-1101.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.p2_1.14.0.v20200202-1112.jar
+eclipse-installer/plugins/org.eclipse.oomph.p2.doc_1.11.0.v20200204-0711.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.ui_1.16.0.v20200303-0611.jar
+eclipse-installer/plugins/com.ibm.icu_64.2.0.v20190507-1337.jar
+eclipse-installer/plugins/com.jcraft.jsch_0.1.55.v20190404-1902.jar
+eclipse-installer/plugins/javax.annotation_1.2.0.v201602091430.jar
+eclipse-installer/plugins/javax.inject_1.0.0.v20091030.jar
+eclipse-installer/plugins/org.apache.batik.constants_1.11.0.v20190515-0436.jar
+eclipse-installer/plugins/org.apache.batik.css_1.11.0.v20190515-0436.jar
+eclipse-installer/plugins/org.apache.batik.i18n_1.11.0.v20190515-0436.jar
+eclipse-installer/plugins/org.apache.batik.util_1.11.0.v20190515-0436.jar
+eclipse-installer/plugins/org.apache.commons.codec_1.13.0.v20200108-0001.jar
+eclipse-installer/plugins/org.apache.commons.io_2.6.0.v20190123-2029.jar
+eclipse-installer/plugins/org.apache.commons.jxpath_1.3.0.v200911051830.jar
+eclipse-installer/plugins/org.apache.commons.logging_1.2.0.v20180409-1502.jar
+eclipse-installer/plugins/org.apache.felix.gogo.command_1.0.2.v20170914-1324.jar
+eclipse-installer/plugins/org.apache.felix.gogo.runtime_1.1.0.v20180713-1646.jar
+eclipse-installer/plugins/org.apache.felix.gogo.shell_1.1.0.v20180713-1646.jar
+eclipse-installer/plugins/org.apache.felix.scr_2.1.16.v20200110-1820.jar
+eclipse-installer/plugins/org.apache.httpcomponents.httpclient_4.5.10.v20200114-1512.jar
+eclipse-installer/plugins/org.apache.httpcomponents.httpcore_4.4.12.v20200108-1212.jar
+eclipse-installer/plugins/org.apache.xmlgraphics_2.3.0.v20190515-0436.jar
+eclipse-installer/plugins/org.eclipse.core.commands_3.9.700.v20191217-1850.jar
+eclipse-installer/plugins/org.eclipse.core.contenttype_3.7.600.v20200124-1609.jar
+eclipse-installer/plugins/org.eclipse.core.databinding_1.8.0.v20200205-2008.jar
+eclipse-installer/plugins/org.eclipse.core.databinding.beans_1.6.100.v20191217-1850.jar
+eclipse-installer/plugins/org.eclipse.core.databinding.observable_1.9.0.v20200205-2119.jar
+eclipse-installer/plugins/org.eclipse.core.databinding.property_1.8.0.v20200124-0715.jar
+eclipse-installer/plugins/org.eclipse.core.expressions_3.6.700.v20200212-1751.jar
+eclipse-installer/plugins/org.eclipse.core.filebuffers_3.6.900.v20200117-0616.jar
+eclipse-installer/plugins/org.eclipse.core.filesystem_1.7.700.v20200110-1734.jar
+eclipse-installer/plugins/org.eclipse.core.jobs_3.10.700.v20200106-1020.jar
+eclipse-installer/plugins/org.eclipse.core.net_1.3.800.v20200218-0937.jar
+eclipse-installer/plugins/org.eclipse.core.net.linux.x86_64_1.2.400.v20190924-1023.jar
+eclipse-installer/plugins/org.eclipse.core.runtime_3.17.100.v20200203-0917.jar
+eclipse-installer/plugins/org.eclipse.e4.core.commands_0.12.900.v20200110-1732.jar
+eclipse-installer/plugins/org.eclipse.e4.core.contexts_1.8.400.v20191217-1710.jar
+eclipse-installer/plugins/org.eclipse.e4.core.di_1.7.500.v20190916-2125.jar
+eclipse-installer/plugins/org.eclipse.e4.core.di.annotations_1.6.600.v20191216-2352.jar
+eclipse-installer/plugins/org.eclipse.e4.core.di.extensions_0.15.500.v20200106-1259.jar
+eclipse-installer/plugins/org.eclipse.e4.core.di.extensions.supplier_0.15.500.v20200106-1259.jar
+eclipse-installer/plugins/org.eclipse.e4.core.services_2.2.200.v20200127-0814.jar
+eclipse-installer/plugins/org.eclipse.e4.emf.xpath_0.2.600.v20191216-0805.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.bindings_0.12.800.v20191216-0805.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.css.core_0.12.1000.v20200129-0903.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.css.swt_0.13.900.v20200203-0840.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.css.swt.theme_0.12.600.v20200124-0005.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.di_1.2.800.v20200128-0855.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.dialogs_1.1.700.v20200201-1719.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.ide_3.15.0.v20200113-2039.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.model.workbench_2.1.700.v20200113-1422.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.services_1.3.700.v20190930-1643.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.swt.gtk_1.0.600.v20190627-0755.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.widgets_1.2.700.v20191222-1048.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.workbench_1.11.200.v20200205-1503.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.workbench.addons.swt_1.3.800.v20191212-1231.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.workbench.renderers.swt_0.14.1100.v20200217-1217.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.workbench.swt_0.14.900.v20200213-1442.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.workbench3_0.15.400.v20191216-0805.jar
+eclipse-installer/plugins/org.eclipse.ecf_3.9.5.v20200217-1548.jar
+eclipse-installer/plugins/org.eclipse.ecf.filetransfer_5.1.0.v20200217-0016.jar
+eclipse-installer/plugins/org.eclipse.ecf.identity_3.9.300.v20191020-1846.jar
+eclipse-installer/plugins/org.eclipse.ecf.provider.filetransfer_3.2.500.v20191017-1905.jar
+eclipse-installer/plugins/org.eclipse.ecf.provider.filetransfer.httpclient45_1.0.200.v20200212-0036.jar
+eclipse-installer/plugins/org.eclipse.ecf.provider.filetransfer.ssl_1.0.101.v20191012-1926.jar
+eclipse-installer/plugins/org.eclipse.ecf.ssl_1.2.300.v20191012-1926.jar
+eclipse-installer/plugins/org.eclipse.emf.common_2.18.0.v20191225-1014.jar
+eclipse-installer/plugins/org.eclipse.emf.common.ui_2.18.0.v20190507-0402.jar
+eclipse-installer/plugins/org.eclipse.emf.ecore_2.21.0.v20200127-1342.jar
+eclipse-installer/plugins/org.eclipse.emf.ecore.change_2.14.0.v20190528-0725.jar
+eclipse-installer/plugins/org.eclipse.emf.ecore.xmi_2.16.0.v20190528-0725.jar
+eclipse-installer/plugins/org.eclipse.emf.edit_2.16.0.v20190920-0401.jar
+eclipse-installer/plugins/org.eclipse.emf.edit.ui_2.18.0.v20200205-0529.jar
+eclipse-installer/plugins/org.eclipse.equinox.app_1.4.400.v20191212-0743.jar
+eclipse-installer/plugins/org.eclipse.equinox.bidi_1.2.300.v20191213-1901.jar
+eclipse-installer/plugins/org.eclipse.equinox.common_3.11.0.v20200206-0817.jar
+eclipse-installer/plugins/org.eclipse.equinox.concurrent_1.1.500.v20200106-1437.jar
+eclipse-installer/plugins/org.eclipse.equinox.console_1.4.0.v20190819-1430.jar
+eclipse-installer/plugins/org.eclipse.equinox.event_1.5.300.v20191001-1333.jar
+eclipse-installer/plugins/org.eclipse.equinox.frameworkadmin_2.1.400.v20191002-0702.jar
+eclipse-installer/plugins/org.eclipse.equinox.frameworkadmin.equinox_1.1.300.v20200211-1503.jar
+eclipse-installer/plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.artifact.repository_1.3.400.v20191224-0854.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.console_1.1.300.v20191014-1219.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.core_2.6.300.v20200211-1504.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.director_2.4.600.v20200211-1504.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.director.app_1.1.500.v20200211-1504.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.engine_2.6.600.v20200110-2121.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.garbagecollector_1.1.400.v20200221-1022.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.jarprocessor_1.1.600.v20200217-1130.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.metadata_2.4.700.v20191213-1911.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.metadata.repository_1.3.400.v20191211-1528.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.operations_2.5.700.v20191211-1713.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.publisher_1.5.300.v20191016-0507.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.publisher.eclipse_1.3.500.v20200203-1449.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.repository_2.4.700.v20200110-2121.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.repository.tools_2.2.500.v20200110-2121.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.touchpoint.eclipse_2.2.600.v20200114-1339.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.touchpoint.natives_1.3.500.v20200218-1022.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.transport.ecf_1.2.400.v20200123-2221.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.ui_2.5.800.v20200213-1530.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.updatesite_1.1.300.v20191016-0515.jar
+eclipse-installer/plugins/org.eclipse.equinox.preferences_3.7.700.v20191213-1901.jar
+eclipse-installer/plugins/org.eclipse.equinox.registry_3.8.700.v20200121-1457.jar
+eclipse-installer/plugins/org.eclipse.equinox.security_1.3.500.v20200114-1637.jar
+eclipse-installer/plugins/org.eclipse.equinox.security.ui_1.2.600.v20191213-1901.jar
+eclipse-installer/plugins/org.eclipse.equinox.simpleconfigurator_1.3.500.v20200211-1505.jar
+eclipse-installer/plugins/org.eclipse.equinox.simpleconfigurator.manipulator_2.1.500.v20200211-1505.jar
+eclipse-installer/plugins/org.eclipse.help_3.8.700.v20191212-1123.jar
+eclipse-installer/plugins/org.eclipse.jface_3.19.0.v20200218-1607.jar
+eclipse-installer/plugins/org.eclipse.jface.databinding_1.11.0.v20200205-2119.jar
+eclipse-installer/plugins/org.eclipse.jface.text_3.16.200.v20200218-0828.jar
+eclipse-installer/plugins/org.eclipse.jsch.core_1.3.800.v20200106-0907.jar
+eclipse-installer/plugins/org.eclipse.jsch.ui_1.3.800.v20200205-0619.jar
+eclipse-installer/plugins/org.eclipse.nebula.cwt_1.1.0.202003151134.jar
+eclipse-installer/plugins/org.eclipse.nebula.widgets.cdatetime_1.4.0.202003151134.jar
+eclipse-installer/plugins/org.eclipse.nebula.widgets.tablecombo_1.2.0.202003151134.jar
+eclipse-installer/plugins/org.eclipse.osgi_3.15.200.v20200214-1600.jar
+eclipse-installer/plugins/org.eclipse.osgi.compatibility.state_1.1.700.v20200207-2156.jar
+eclipse-installer/plugins/org.eclipse.osgi.services_3.8.0.v20190206-2147.jar
+eclipse-installer/plugins/org.eclipse.osgi.util_3.5.300.v20190708-1141.jar
+eclipse-installer/plugins/org.eclipse.rcp_4.15.0.v20200305-0155.jar
+eclipse-installer/plugins/org.eclipse.swt_3.114.0.v20200304-0601.jar
+eclipse-installer/plugins/org.eclipse.swt.gtk.linux.x86_64_3.114.0.v20200304-0601.jar
+eclipse-installer/plugins/org.eclipse.text_3.10.100.v20200217-1239.jar
+eclipse-installer/plugins/org.eclipse.ui_3.116.0.v20200203-1308.jar
+eclipse-installer/plugins/org.eclipse.ui.forms_3.9.0.v20200213-1442.jar
+eclipse-installer/plugins/org.eclipse.ui.ide_3.17.0.v20200217-1511.jar
+eclipse-installer/plugins/org.eclipse.ui.intro_3.5.900.v20200217-1223.jar
+eclipse-installer/plugins/org.eclipse.ui.navigator_3.9.200.v20200213-1442.jar
+eclipse-installer/plugins/org.eclipse.ui.net_1.3.700.v20200212-0844.jar
+eclipse-installer/plugins/org.eclipse.ui.views_3.10.200.v20200213-1442.jar
+eclipse-installer/plugins/org.eclipse.ui.workbench_3.118.0.v20200222-0719.jar
+eclipse-installer/plugins/org.eclipse.update.configurator_3.4.500.v20200225-0827.jar
+eclipse-installer/plugins/org.eclipse.urischeme_1.0.600.v20200115-1733.jar
+eclipse-installer/plugins/org.eclipse.userstorage_1.2.0.v20190307-0457.jar
+eclipse-installer/plugins/org.eclipse.userstorage.oauth_1.1.0.v20190307-0457.jar
+eclipse-installer/plugins/org.eclipse.userstorage.ui_1.1.0.v20190307-0457.jar
+eclipse-installer/plugins/org.sat4j.core_2.3.5.v201308161310.jar
+eclipse-installer/plugins/org.sat4j.pb_2.3.5.v201404071733.jar
+eclipse-installer/plugins/org.tukaani.xz_1.8.0.v20180207-1613.jar
+eclipse-installer/plugins/org.w3c.css.sac_1.3.1.v200903091627.jar
+eclipse-installer/plugins/org.w3c.dom.events_3.0.0.draft20060413_v201105210656.jar
+eclipse-installer/plugins/org.w3c.dom.smil_1.0.1.v200903091627.jar
+eclipse-installer/plugins/org.w3c.dom.svg_1.1.0.v201011041433.jar
+eclipse-installer/plugins/org.eclipse.oomph.jreinfo.ui_1.11.0.v20191006-0741.jar
+eclipse-installer/plugins/org.eclipse.oomph.junit_1.1.0.v20191220-0745.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.sync_1.12.0.v20200203-0955.jar
+eclipse-installer/plugins/org.eclipse.oomph.extractor.lib_1.7.0.v20191111-0627.jar
+eclipse-installer/plugins/org.eclipse.oomph.util_1.14.0.v20200113-0727.jar
+eclipse-installer/features/
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/META-INF/
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/epl-v20.html
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/license.html
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/feature.xml
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/feature.properties
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/META-INF/
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/icons/
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/icons/window-bad.ico
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/icons/window.icns
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/icons/window.ico
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/icons/window.xpm
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/epl-v20.html
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/license.html
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/feature.xml
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/feature.properties
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/META-INF/
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/feature.xml
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/feature.properties
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/epl-2.0.html
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/license.html
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/META-INF/
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/about.html
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/license.html
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/feature.xml
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/feature.properties
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/epl-v10.html
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/META-INF/
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/about.html
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/license.html
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/feature.xml
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/feature.properties
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/epl-v10.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/META-INF/
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/asl-v20.txt
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/epl-v10.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/feature.xml
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/feature.properties
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/about.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/license.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/META-INF/
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/about.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/epl-v10.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/feature.xml
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/feature.properties
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/asl-v20.txt
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/license.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/META-INF/
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/about.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/feature.xml
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/feature.properties
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/epl-v10.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/license.html
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/META-INF/
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/epl-2.0.html
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/license.html
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/feature.xml
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/feature.properties
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/META-INF/
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/epl-2.0.html
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/license.html
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/feature.xml
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/feature.properties
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/META-INF/
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/epl-2.0.html
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/license.html
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/feature.xml
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/feature.properties
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/META-INF/
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/epl-2.0.html
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/license.html
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/feature.xml
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/feature.properties
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/META-INF/
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/epl-2.0.html
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/license.html
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/feature.xml
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/feature.properties
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/META-INF/
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/feature.xml
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/feature.properties
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/epl-2.0.html
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/license.html
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/META-INF/
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/feature.xml
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/feature.properties
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/epl-2.0.html
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/license.html
+eclipse-installer/readme/
+eclipse-installer/readme/readme_eclipse.html
+eclipse-installer/configuration/
+eclipse-installer/configuration/org.eclipse.equinox.simpleconfigurator/
+eclipse-installer/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+eclipse-installer/configuration/org.eclipse.update/
+eclipse-installer/configuration/org.eclipse.update/platform.xml
+eclipse-installer/configuration/config.ini
+eclipse-installer/artifacts.xml
+eclipse-installer/icon.xpm
+eclipse-installer/eclipse-inst
+eclipse-installer/eclipse-inst.ini
+
+3. Updating Eclipse Environment Variables
+--------------------------------------
+
+1. Updating System
+------------------
+Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:2 http://gb.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:3 http://gb.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:4 http://gb.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up-to-date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libboost-date-time1.65.1
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1
+  libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5
+  libcolamd2 libdazzle-1.0-0 libe-book-0.1-1 libedataserverui-1.2-2 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libevent-2.1-6 libexiv2-14
+  libfreerdp-client2-2 libfreerdp2-2 libfwup1 libgc1c2 libgee-0.8-2
+  libgexiv2-2 libgom-1.0-0 libgpgmepp6 libgpod-common libgpod4
+  liblangtag-common liblangtag1 liblirc-client0 liblua5.3-0 libmediaart-2.0-0
+  libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5 libraw16 librevenge-0.0-0
+  libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwayland-egl1-mesa libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss
+  lp-solve media-player-info python3-mako python3-markupsafe syslinux
+  syslinux-common syslinux-legacy usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.58.0-2ubuntu3.8).
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libboost-date-time1.65.1
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1
+  libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5
+  libcolamd2 libdazzle-1.0-0 libe-book-0.1-1 libedataserverui-1.2-2 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libevent-2.1-6 libexiv2-14
+  libfreerdp-client2-2 libfreerdp2-2 libfwup1 libgc1c2 libgee-0.8-2
+  libgexiv2-2 libgom-1.0-0 libgpgmepp6 libgpod-common libgpod4
+  liblangtag-common liblangtag1 liblirc-client0 liblua5.3-0 libmediaart-2.0-0
+  libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5 libraw16 librevenge-0.0-0
+  libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwayland-egl1-mesa libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss
+  lp-solve media-player-info python3-mako python3-markupsafe syslinux
+  syslinux-common syslinux-legacy usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+tar is already the newest version (1.29b-2ubuntu0.1).
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libboost-date-time1.65.1
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1
+  libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5
+  libcolamd2 libdazzle-1.0-0 libe-book-0.1-1 libedataserverui-1.2-2 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libevent-2.1-6 libexiv2-14
+  libfreerdp-client2-2 libfreerdp2-2 libfwup1 libgc1c2 libgee-0.8-2
+  libgexiv2-2 libgom-1.0-0 libgpgmepp6 libgpod-common libgpod4
+  liblangtag-common liblangtag1 liblirc-client0 liblua5.3-0 libmediaart-2.0-0
+  libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5 libraw16 librevenge-0.0-0
+  libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwayland-egl1-mesa libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss
+  lp-solve media-player-info python3-mako python3-markupsafe syslinux
+  syslinux-common syslinux-legacy usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
+
+2. Installing Java
+------------------
+Reading package lists...
+Building dependency tree...
+Reading state information...
+openjdk-8-jdk is already the newest version (8u252-b09-1~18.04).
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libboost-date-time1.65.1
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1
+  libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5
+  libcolamd2 libdazzle-1.0-0 libe-book-0.1-1 libedataserverui-1.2-2 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libevent-2.1-6 libexiv2-14
+  libfreerdp-client2-2 libfreerdp2-2 libfwup1 libgc1c2 libgee-0.8-2
+  libgexiv2-2 libgom-1.0-0 libgpgmepp6 libgpod-common libgpod4
+  liblangtag-common liblangtag1 liblirc-client0 liblua5.3-0 libmediaart-2.0-0
+  libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5 libraw16 librevenge-0.0-0
+  libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwayland-egl1-mesa libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss
+  lp-solve media-player-info python3-mako python3-markupsafe syslinux
+  syslinux-common syslinux-legacy usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
+
+3. Updating Java Environment Variables
+--------------------------------------
+
+1. Check dir
+------------------
+
+2. Installing Eclipse
+------------------
+eclipse-installer/
+eclipse-installer/p2/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/.data/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/.data/org.eclipse.equinox.internal.p2.touchpoint.eclipse.actions/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/.data/org.eclipse.equinox.internal.p2.touchpoint.eclipse.actions/jvmargs
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/1584350493860.profile.gz
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/.lock
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/1584350493862.profile.gz
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/1584350495082.profile.gz
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/1584350495430.profile.gz
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/.settings/
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/.settings/org.eclipse.equinox.p2.metadata.repository.prefs
+eclipse-installer/p2/org.eclipse.equinox.p2.engine/.settings/org.eclipse.equinox.p2.artifact.repository.prefs
+eclipse-installer/p2/org.eclipse.equinox.p2.core/
+eclipse-installer/p2/org.eclipse.equinox.p2.core/cache/
+eclipse-installer/p2/org.eclipse.equinox.p2.core/cache/binary/
+eclipse-installer/p2/org.eclipse.equinox.p2.core/cache/binary/org.eclipse.rcp_root_4.15.0.v20200305-0155
+eclipse-installer/p2/org.eclipse.equinox.p2.core/cache/binary/org.eclipse.oomph.setup.installer.product.executable.gtk.linux.x86_64_1.16.0.v20200309-1218
+eclipse-installer/p2/org.eclipse.equinox.p2.core/cache/artifacts.xml
+eclipse-installer/plugins/
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/META-INF/
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/META-INF/MANIFEST.MF
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/META-INF/ECLIPSE_.SF
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/META-INF/ECLIPSE_.RSA
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/launcher.gtk.linux.x86_64.properties
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/eclipse_1801.so
+eclipse-installer/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.1100.v20190907-0426/about.html
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/META-INF/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/META-INF/MANIFEST.MF
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/META-INF/ECLIPSE_.SF
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/META-INF/ECLIPSE_.RSA
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/security/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/security/linux/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/security/linux/nls/
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/security/linux/nls/messages.properties
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/security/linux/nls/LinuxPasswordProviderMessages.class
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/org/eclipse/equinox/internal/security/linux/LinuxPasswordProvider.class
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/libkeystorelinuxnative.so
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/.api_description
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/about.html
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/fragment.xml
+eclipse-installer/plugins/org.eclipse.equinox.security.linux.x86_64_1.1.300.v20190830-1238/fragment.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/META-INF/
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/META-INF/MANIFEST.MF
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/META-INF/ECLIPSE_.SF
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/META-INF/ECLIPSE_.RSA
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_migrate48.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/ov_wbbasics48.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_updates48.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_eclplatform48.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/arrow.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_eclcommunity48_hov.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_eclplatform48_hov.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/ov_wbbasics48_hov.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_eclcommunity48.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_updates48_hov.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/topiclabel/wn_migrate48_hov.gif
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winXPOlive.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winXPTSFrame.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winXPBluHandle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/macGrey.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/gtkHandle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/macTSFrame.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winClassicHandle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/win7.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/dragHandle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winXPBluTSFrame.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winClassicTSFrame.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/win7Handle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/win7TSFrame.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/gtkTSFrame.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/macHandle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winXPBlue.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/images/winXPHandle.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/overview.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/overview.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/migrate.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/whatsnew.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/migrate.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/css/whatsnew.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/whatsnewExtensionContent2.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/migrateExtensionContent.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/whatsnewExtensionContent3.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/whatsnewExtensionContent1.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro/overviewExtensionContent.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/plugin_customization.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse16.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse48.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/macosx_narrow_book.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/plugin.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/narrow_book.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse512.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse32.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse_lg.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/introData.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/intro-eclipse.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/plugin_customization.ini
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/about.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse24.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/platform.jar
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/disabled_book.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/splash.bmp
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/about.mappings
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/about.ini
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/book.css
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse128.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse64.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/plugin.properties
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/about.html
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/LegacyIDE.e4xmi
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse1024.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/helpData.xml
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse256.png
+eclipse-installer/plugins/org.eclipse.platform_4.15.0.v20200305-0155/eclipse22.png
+eclipse-installer/plugins/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218.jar
+eclipse-installer/plugins/org.eclipse.oomph.p2.edit_1.12.0.v20200202-1112.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.ui.questionnaire_1.10.0.v20180706-1242.jar
+eclipse-installer/plugins/org.eclipse.oomph.p2_1.12.0.v20200203-0955.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.edit_1.14.0.v20190704-1252.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup_1.16.0.v20200309-0628.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.core_1.16.0.v20200219-0856.jar
+eclipse-installer/plugins/org.eclipse.oomph.base.edit_1.12.0.v20190702-1454.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.doc_1.11.0.v20200204-0711.jar
+eclipse-installer/plugins/org.eclipse.oomph.jreinfo_1.12.0.v20191228-0803.jar
+eclipse-installer/plugins/org.eclipse.oomph.base_1.13.0.v20200203-0955.jar
+eclipse-installer/plugins/org.eclipse.oomph.p2.ui_1.13.0.v20200226-1838.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.p2.edit_1.12.0.v20200202-1112.jar
+eclipse-installer/plugins/org.eclipse.oomph.preferences_1.11.0.v20190920-0437.jar
+eclipse-installer/plugins/org.eclipse.oomph.util.doc_1.11.0.v20200204-0711.jar
+eclipse-installer/plugins/org.eclipse.oomph.p2.core_1.15.0.v20200307-0636.jar
+eclipse-installer/plugins/org.eclipse.oomph.ui_1.13.0.v20191221-1101.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.p2_1.14.0.v20200202-1112.jar
+eclipse-installer/plugins/org.eclipse.oomph.p2.doc_1.11.0.v20200204-0711.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.ui_1.16.0.v20200303-0611.jar
+eclipse-installer/plugins/com.ibm.icu_64.2.0.v20190507-1337.jar
+eclipse-installer/plugins/com.jcraft.jsch_0.1.55.v20190404-1902.jar
+eclipse-installer/plugins/javax.annotation_1.2.0.v201602091430.jar
+eclipse-installer/plugins/javax.inject_1.0.0.v20091030.jar
+eclipse-installer/plugins/org.apache.batik.constants_1.11.0.v20190515-0436.jar
+eclipse-installer/plugins/org.apache.batik.css_1.11.0.v20190515-0436.jar
+eclipse-installer/plugins/org.apache.batik.i18n_1.11.0.v20190515-0436.jar
+eclipse-installer/plugins/org.apache.batik.util_1.11.0.v20190515-0436.jar
+eclipse-installer/plugins/org.apache.commons.codec_1.13.0.v20200108-0001.jar
+eclipse-installer/plugins/org.apache.commons.io_2.6.0.v20190123-2029.jar
+eclipse-installer/plugins/org.apache.commons.jxpath_1.3.0.v200911051830.jar
+eclipse-installer/plugins/org.apache.commons.logging_1.2.0.v20180409-1502.jar
+eclipse-installer/plugins/org.apache.felix.gogo.command_1.0.2.v20170914-1324.jar
+eclipse-installer/plugins/org.apache.felix.gogo.runtime_1.1.0.v20180713-1646.jar
+eclipse-installer/plugins/org.apache.felix.gogo.shell_1.1.0.v20180713-1646.jar
+eclipse-installer/plugins/org.apache.felix.scr_2.1.16.v20200110-1820.jar
+eclipse-installer/plugins/org.apache.httpcomponents.httpclient_4.5.10.v20200114-1512.jar
+eclipse-installer/plugins/org.apache.httpcomponents.httpcore_4.4.12.v20200108-1212.jar
+eclipse-installer/plugins/org.apache.xmlgraphics_2.3.0.v20190515-0436.jar
+eclipse-installer/plugins/org.eclipse.core.commands_3.9.700.v20191217-1850.jar
+eclipse-installer/plugins/org.eclipse.core.contenttype_3.7.600.v20200124-1609.jar
+eclipse-installer/plugins/org.eclipse.core.databinding_1.8.0.v20200205-2008.jar
+eclipse-installer/plugins/org.eclipse.core.databinding.beans_1.6.100.v20191217-1850.jar
+eclipse-installer/plugins/org.eclipse.core.databinding.observable_1.9.0.v20200205-2119.jar
+eclipse-installer/plugins/org.eclipse.core.databinding.property_1.8.0.v20200124-0715.jar
+eclipse-installer/plugins/org.eclipse.core.expressions_3.6.700.v20200212-1751.jar
+eclipse-installer/plugins/org.eclipse.core.filebuffers_3.6.900.v20200117-0616.jar
+eclipse-installer/plugins/org.eclipse.core.filesystem_1.7.700.v20200110-1734.jar
+eclipse-installer/plugins/org.eclipse.core.jobs_3.10.700.v20200106-1020.jar
+eclipse-installer/plugins/org.eclipse.core.net_1.3.800.v20200218-0937.jar
+eclipse-installer/plugins/org.eclipse.core.net.linux.x86_64_1.2.400.v20190924-1023.jar
+eclipse-installer/plugins/org.eclipse.core.runtime_3.17.100.v20200203-0917.jar
+eclipse-installer/plugins/org.eclipse.e4.core.commands_0.12.900.v20200110-1732.jar
+eclipse-installer/plugins/org.eclipse.e4.core.contexts_1.8.400.v20191217-1710.jar
+eclipse-installer/plugins/org.eclipse.e4.core.di_1.7.500.v20190916-2125.jar
+eclipse-installer/plugins/org.eclipse.e4.core.di.annotations_1.6.600.v20191216-2352.jar
+eclipse-installer/plugins/org.eclipse.e4.core.di.extensions_0.15.500.v20200106-1259.jar
+eclipse-installer/plugins/org.eclipse.e4.core.di.extensions.supplier_0.15.500.v20200106-1259.jar
+eclipse-installer/plugins/org.eclipse.e4.core.services_2.2.200.v20200127-0814.jar
+eclipse-installer/plugins/org.eclipse.e4.emf.xpath_0.2.600.v20191216-0805.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.bindings_0.12.800.v20191216-0805.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.css.core_0.12.1000.v20200129-0903.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.css.swt_0.13.900.v20200203-0840.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.css.swt.theme_0.12.600.v20200124-0005.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.di_1.2.800.v20200128-0855.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.dialogs_1.1.700.v20200201-1719.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.ide_3.15.0.v20200113-2039.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.model.workbench_2.1.700.v20200113-1422.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.services_1.3.700.v20190930-1643.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.swt.gtk_1.0.600.v20190627-0755.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.widgets_1.2.700.v20191222-1048.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.workbench_1.11.200.v20200205-1503.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.workbench.addons.swt_1.3.800.v20191212-1231.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.workbench.renderers.swt_0.14.1100.v20200217-1217.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.workbench.swt_0.14.900.v20200213-1442.jar
+eclipse-installer/plugins/org.eclipse.e4.ui.workbench3_0.15.400.v20191216-0805.jar
+eclipse-installer/plugins/org.eclipse.ecf_3.9.5.v20200217-1548.jar
+eclipse-installer/plugins/org.eclipse.ecf.filetransfer_5.1.0.v20200217-0016.jar
+eclipse-installer/plugins/org.eclipse.ecf.identity_3.9.300.v20191020-1846.jar
+eclipse-installer/plugins/org.eclipse.ecf.provider.filetransfer_3.2.500.v20191017-1905.jar
+eclipse-installer/plugins/org.eclipse.ecf.provider.filetransfer.httpclient45_1.0.200.v20200212-0036.jar
+eclipse-installer/plugins/org.eclipse.ecf.provider.filetransfer.ssl_1.0.101.v20191012-1926.jar
+eclipse-installer/plugins/org.eclipse.ecf.ssl_1.2.300.v20191012-1926.jar
+eclipse-installer/plugins/org.eclipse.emf.common_2.18.0.v20191225-1014.jar
+eclipse-installer/plugins/org.eclipse.emf.common.ui_2.18.0.v20190507-0402.jar
+eclipse-installer/plugins/org.eclipse.emf.ecore_2.21.0.v20200127-1342.jar
+eclipse-installer/plugins/org.eclipse.emf.ecore.change_2.14.0.v20190528-0725.jar
+eclipse-installer/plugins/org.eclipse.emf.ecore.xmi_2.16.0.v20190528-0725.jar
+eclipse-installer/plugins/org.eclipse.emf.edit_2.16.0.v20190920-0401.jar
+eclipse-installer/plugins/org.eclipse.emf.edit.ui_2.18.0.v20200205-0529.jar
+eclipse-installer/plugins/org.eclipse.equinox.app_1.4.400.v20191212-0743.jar
+eclipse-installer/plugins/org.eclipse.equinox.bidi_1.2.300.v20191213-1901.jar
+eclipse-installer/plugins/org.eclipse.equinox.common_3.11.0.v20200206-0817.jar
+eclipse-installer/plugins/org.eclipse.equinox.concurrent_1.1.500.v20200106-1437.jar
+eclipse-installer/plugins/org.eclipse.equinox.console_1.4.0.v20190819-1430.jar
+eclipse-installer/plugins/org.eclipse.equinox.event_1.5.300.v20191001-1333.jar
+eclipse-installer/plugins/org.eclipse.equinox.frameworkadmin_2.1.400.v20191002-0702.jar
+eclipse-installer/plugins/org.eclipse.equinox.frameworkadmin.equinox_1.1.300.v20200211-1503.jar
+eclipse-installer/plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.artifact.repository_1.3.400.v20191224-0854.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.console_1.1.300.v20191014-1219.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.core_2.6.300.v20200211-1504.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.director_2.4.600.v20200211-1504.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.director.app_1.1.500.v20200211-1504.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.engine_2.6.600.v20200110-2121.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.garbagecollector_1.1.400.v20200221-1022.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.jarprocessor_1.1.600.v20200217-1130.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.metadata_2.4.700.v20191213-1911.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.metadata.repository_1.3.400.v20191211-1528.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.operations_2.5.700.v20191211-1713.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.publisher_1.5.300.v20191016-0507.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.publisher.eclipse_1.3.500.v20200203-1449.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.repository_2.4.700.v20200110-2121.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.repository.tools_2.2.500.v20200110-2121.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.touchpoint.eclipse_2.2.600.v20200114-1339.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.touchpoint.natives_1.3.500.v20200218-1022.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.transport.ecf_1.2.400.v20200123-2221.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.ui_2.5.800.v20200213-1530.jar
+eclipse-installer/plugins/org.eclipse.equinox.p2.updatesite_1.1.300.v20191016-0515.jar
+eclipse-installer/plugins/org.eclipse.equinox.preferences_3.7.700.v20191213-1901.jar
+eclipse-installer/plugins/org.eclipse.equinox.registry_3.8.700.v20200121-1457.jar
+eclipse-installer/plugins/org.eclipse.equinox.security_1.3.500.v20200114-1637.jar
+eclipse-installer/plugins/org.eclipse.equinox.security.ui_1.2.600.v20191213-1901.jar
+eclipse-installer/plugins/org.eclipse.equinox.simpleconfigurator_1.3.500.v20200211-1505.jar
+eclipse-installer/plugins/org.eclipse.equinox.simpleconfigurator.manipulator_2.1.500.v20200211-1505.jar
+eclipse-installer/plugins/org.eclipse.help_3.8.700.v20191212-1123.jar
+eclipse-installer/plugins/org.eclipse.jface_3.19.0.v20200218-1607.jar
+eclipse-installer/plugins/org.eclipse.jface.databinding_1.11.0.v20200205-2119.jar
+eclipse-installer/plugins/org.eclipse.jface.text_3.16.200.v20200218-0828.jar
+eclipse-installer/plugins/org.eclipse.jsch.core_1.3.800.v20200106-0907.jar
+eclipse-installer/plugins/org.eclipse.jsch.ui_1.3.800.v20200205-0619.jar
+eclipse-installer/plugins/org.eclipse.nebula.cwt_1.1.0.202003151134.jar
+eclipse-installer/plugins/org.eclipse.nebula.widgets.cdatetime_1.4.0.202003151134.jar
+eclipse-installer/plugins/org.eclipse.nebula.widgets.tablecombo_1.2.0.202003151134.jar
+eclipse-installer/plugins/org.eclipse.osgi_3.15.200.v20200214-1600.jar
+eclipse-installer/plugins/org.eclipse.osgi.compatibility.state_1.1.700.v20200207-2156.jar
+eclipse-installer/plugins/org.eclipse.osgi.services_3.8.0.v20190206-2147.jar
+eclipse-installer/plugins/org.eclipse.osgi.util_3.5.300.v20190708-1141.jar
+eclipse-installer/plugins/org.eclipse.rcp_4.15.0.v20200305-0155.jar
+eclipse-installer/plugins/org.eclipse.swt_3.114.0.v20200304-0601.jar
+eclipse-installer/plugins/org.eclipse.swt.gtk.linux.x86_64_3.114.0.v20200304-0601.jar
+eclipse-installer/plugins/org.eclipse.text_3.10.100.v20200217-1239.jar
+eclipse-installer/plugins/org.eclipse.ui_3.116.0.v20200203-1308.jar
+eclipse-installer/plugins/org.eclipse.ui.forms_3.9.0.v20200213-1442.jar
+eclipse-installer/plugins/org.eclipse.ui.ide_3.17.0.v20200217-1511.jar
+eclipse-installer/plugins/org.eclipse.ui.intro_3.5.900.v20200217-1223.jar
+eclipse-installer/plugins/org.eclipse.ui.navigator_3.9.200.v20200213-1442.jar
+eclipse-installer/plugins/org.eclipse.ui.net_1.3.700.v20200212-0844.jar
+eclipse-installer/plugins/org.eclipse.ui.views_3.10.200.v20200213-1442.jar
+eclipse-installer/plugins/org.eclipse.ui.workbench_3.118.0.v20200222-0719.jar
+eclipse-installer/plugins/org.eclipse.update.configurator_3.4.500.v20200225-0827.jar
+eclipse-installer/plugins/org.eclipse.urischeme_1.0.600.v20200115-1733.jar
+eclipse-installer/plugins/org.eclipse.userstorage_1.2.0.v20190307-0457.jar
+eclipse-installer/plugins/org.eclipse.userstorage.oauth_1.1.0.v20190307-0457.jar
+eclipse-installer/plugins/org.eclipse.userstorage.ui_1.1.0.v20190307-0457.jar
+eclipse-installer/plugins/org.sat4j.core_2.3.5.v201308161310.jar
+eclipse-installer/plugins/org.sat4j.pb_2.3.5.v201404071733.jar
+eclipse-installer/plugins/org.tukaani.xz_1.8.0.v20180207-1613.jar
+eclipse-installer/plugins/org.w3c.css.sac_1.3.1.v200903091627.jar
+eclipse-installer/plugins/org.w3c.dom.events_3.0.0.draft20060413_v201105210656.jar
+eclipse-installer/plugins/org.w3c.dom.smil_1.0.1.v200903091627.jar
+eclipse-installer/plugins/org.w3c.dom.svg_1.1.0.v201011041433.jar
+eclipse-installer/plugins/org.eclipse.oomph.jreinfo.ui_1.11.0.v20191006-0741.jar
+eclipse-installer/plugins/org.eclipse.oomph.junit_1.1.0.v20191220-0745.jar
+eclipse-installer/plugins/org.eclipse.oomph.setup.sync_1.12.0.v20200203-0955.jar
+eclipse-installer/plugins/org.eclipse.oomph.extractor.lib_1.7.0.v20191111-0627.jar
+eclipse-installer/plugins/org.eclipse.oomph.util_1.14.0.v20200113-0727.jar
+eclipse-installer/features/
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/META-INF/
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/epl-v20.html
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/license.html
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/feature.xml
+eclipse-installer/features/org.eclipse.oomph.p2_1.15.0.v20200307-0636/feature.properties
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/META-INF/
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/icons/
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/icons/window-bad.ico
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/icons/window.icns
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/icons/window.ico
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/icons/window.xpm
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/epl-v20.html
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/license.html
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/feature.xml
+eclipse-installer/features/org.eclipse.oomph.setup.installer_1.16.0.v20200309-1218/feature.properties
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/META-INF/
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/feature.xml
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/feature.properties
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/epl-2.0.html
+eclipse-installer/features/org.eclipse.e4.rcp_4.15.0.v20200304-0601/license.html
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/META-INF/
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/about.html
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/license.html
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/feature.xml
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/feature.properties
+eclipse-installer/features/org.eclipse.ecf.core.feature_1.5.500.v20200217-1548/epl-v10.html
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/META-INF/
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/about.html
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/license.html
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/feature.xml
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/feature.properties
+eclipse-installer/features/org.eclipse.ecf.core.ssl.feature_1.1.300.v20191023-2007/epl-v10.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/META-INF/
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/asl-v20.txt
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/epl-v10.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/feature.xml
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/feature.properties
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/about.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.feature_3.14.700.v20200217-0016/license.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/META-INF/
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/about.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/epl-v10.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/feature.xml
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/feature.properties
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/asl-v20.txt
+eclipse-installer/features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.300.v20200217-0016/license.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/META-INF/
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/about.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/feature.xml
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/feature.properties
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/epl-v10.html
+eclipse-installer/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.200.v20191024-1546/license.html
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/META-INF/
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/epl-2.0.html
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/license.html
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/feature.xml
+eclipse-installer/features/org.eclipse.emf.common_2.18.0.v20191225-1014/feature.properties
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/META-INF/
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/epl-2.0.html
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/license.html
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/feature.xml
+eclipse-installer/features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/feature.properties
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/META-INF/
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/epl-2.0.html
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/license.html
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/feature.xml
+eclipse-installer/features/org.eclipse.emf.ecore_2.21.0.v20200127-1342/feature.properties
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/META-INF/
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/epl-2.0.html
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/license.html
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/feature.xml
+eclipse-installer/features/org.eclipse.emf.edit_2.16.0.v20190920-0401/feature.properties
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/META-INF/
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/epl-2.0.html
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/license.html
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/feature.xml
+eclipse-installer/features/org.eclipse.emf.edit.ui_2.19.0.v20200205-0529/feature.properties
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/META-INF/
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/feature.xml
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/feature.properties
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/epl-2.0.html
+eclipse-installer/features/org.eclipse.equinox.p2.core.feature_1.6.500.v20200221-1022/license.html
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/META-INF/
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/META-INF/MANIFEST.MF
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/META-INF/ECLIPSE_.SF
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/META-INF/ECLIPSE_.RSA
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/feature.xml
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/feature.properties
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/epl-2.0.html
+eclipse-installer/features/org.eclipse.rcp_4.15.0.v20200305-0155/license.html
+eclipse-installer/readme/
+eclipse-installer/readme/readme_eclipse.html
+eclipse-installer/configuration/
+eclipse-installer/configuration/org.eclipse.equinox.simpleconfigurator/
+eclipse-installer/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+eclipse-installer/configuration/org.eclipse.update/
+eclipse-installer/configuration/org.eclipse.update/platform.xml
+eclipse-installer/configuration/config.ini
+eclipse-installer/artifacts.xml
+eclipse-installer/icon.xpm
+eclipse-installer/eclipse-inst
+eclipse-installer/eclipse-inst.ini
+
+3. Updating Eclipse Environment Variables
 --------------------------------------

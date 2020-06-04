@@ -35,16 +35,20 @@ def python_test():
 	else:
 		print("Python3.6 not installed.")
 		
-	 
+def java_test():
+	output = os.system("java -version")
+	if output == 0:
+		print("Java installed!")
+	else:
+		print("Java did not install correctly")	 
 
 if __name__ == '__main__':
-	#version = os.popen("python3 --version | grep -o 3[.][0-9]*[.][0-9]*$").read()
-
 	#python installation
 	if install_python3():
 		install_from_sh("python.sh" + is_python2_installed())
 	#java instalation
-	#install_from_sh("Java.sh")
+	install_from_sh("Java.sh")
+	java_test()
 	#eclipse instalation
 	install_from_sh("eclipse.sh")
 	python_test()

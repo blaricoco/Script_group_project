@@ -45,15 +45,15 @@ function check_dir {
 
 
 function install_eclipse {
-	wget -P $DOWNLOADS http://mirror.dkm.cz/eclipse/oomph/epp/2020-03/R/eclipse-in$
 	cd $DOWNLOADS
+	wget -P $DOWNLOADS http://mirror.dkm.cz/eclipse/oomph/epp/2020-03/R/eclipse-inst-linux64.tar.gz
 	tar -xvzf eclipse-inst-linux64.tar.gz
 	eclipse-installer/eclipse-inst
 }
 
 
 function environment_variables {
-	echo 'EC_HOME="'$DIR'/eclipse/java-2020-03/eclipse"' >> ~/.bashrc 
+	echo 'EC_HOME="'$DIR'/java-2020-03/eclipse"' >> ~/.bashrc 
 	echo 'PATH=$PATH:$EC_HOME' >> ~/.bashrc 
 	source ~/.bashrc 
 }
