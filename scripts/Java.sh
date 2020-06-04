@@ -65,7 +65,7 @@ function install_java {
 
 
 function environment_variables {
-    echo "export JAVA_HOME=$JAVA_HOME" >> ~/.bashrc
+    echo "export JAVA_HOME='"$JAVA_HOME"'" >> ~/.bashrc
     echo "export PATH=$PATH:$JAVA_HOME/bin" >> ~/.bashrc
 }
 

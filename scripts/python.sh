@@ -22,15 +22,15 @@ make
 sudo make install
 
 ###Set enviroment variables ###
-echo 'PYTHONPATH="$DIR/bin/python3.6"' >> ~/.bashrc 
+echo 'PYTHONPATH="'$DIR'/bin/python3.6"' >> ~/.bashrc 
 echo 'export PATH=$PATH:$PYTHONPATH' >> ~/.bashrc 
 source ~/.bashrc 
 
 ### Set Python3.6.9 as default if python2 is installed ###
 if (($1 == 1))
 then
-	sudo update-alternatives --install /usr/bin/python python "$HOME/opt/Python-3.6.9/bin/python3.6" 1
-	sudo update-alternatives  --set python "$HOME/opt/Python-3.6.9/python3.6"
+	sudo update-alternatives --install /usr/bin/python python $HOME"/opt/Python-3.6.9/bin/python3.6" 1
+	sudo update-alternatives  --set python $HOME"s/opt/Python-3.6.9/python3.6"
 fi
 
 
