@@ -60,7 +60,7 @@ function install_java {
     #cd ~/Downloads
     #curl -C - -LR#OH "Cookie: oraclelicense=accept-securebackup-cookie" -k $DOWNLOAD_LINK
     #tar -xvzf jdk-8u251-linux-x64.tar.gz
-    sudo apt-get --y install openjdk-8-jdk
+    sudo apt-get -y install openjdk-8-jdk
 }
 
 
