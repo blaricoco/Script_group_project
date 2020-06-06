@@ -59,12 +59,12 @@ function environment_variables {
 
 
 #Installing
-show_progress 1 | fill.log
-install_java | fill.log
+show_progress 1 | fill_log
+install_java | fill_log
 
 #Variables
-show_progress 2 | fill.log
-environment_variables | fill.log
+show_progress 2 | fill_log
+environment_variables | fill_log
 
 
 

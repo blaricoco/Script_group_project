@@ -21,7 +21,7 @@ def is_python2_installed():
                 return " 0"
 
 def install_from_sh(file_name, par=""):
-        os.system("chmod 775 ./" + file_name)   
+        os.system("chmod 775 ./" + file_name)
         os.system("./"+ file_name + par)
 
 
@@ -39,32 +39,32 @@ def java_test():
         if output == 0:
                 print("Java installed!")
         else:
-                print("Java did not install correctly")  
+                print("Java did not install correctly")
 
 
 if __name__ == '__main__':
-	
-	# install dependencies
+
+        # install dependencies
         install_from_sh("dependencies.sh" + is_python2_installed())
 
-	# if open Python3 install software with threading
-       	if (sys.version_info[0] == 3):
+        # if open Python3 install software with threading
+        if (sys.version_info[0] == 3):
 
-	 	import concurrent.futures
-        	# Threading
-        	with concurrent.futures.ThreadPoolExecutor() as executor:
+                import concurrent.futures
+                # Threading
+                with concurrent.futures.ThreadPoolExecutor() as executor:
 
-                	f2= executor.submit(install_from_sh,"eclipse.sh")
-                	f1= executor.submit(install_from_sh,"Java.sh")
-			if install_python3():
-                		f3= executor.submit(install_from_sh,"python.sh"+ is_python2_installed())
+                        f2= executor.submit(install_from_sh,"eclipse.sh")
+                        f1= executor.submit(install_from_sh,"Java.sh")
+                        if install_python3():
+                                f3= executor.submit(install_from_sh,"python.sh"+ is_python2_installed())
 
-        	
-	else:
-		if install_python3():
-                	install_from_sh("python.sh" + is_python2_installed())
-		install_from_sh("Java.sh")
-		install_from_sh("eclipse.sh")
+
+        else:
+                if install_python3():
+                        install_from_sh("python.sh" + is_python2_installed())
+                install_from_sh("Java.sh")
+                install_from_sh("eclipse.sh")
 
         java_test()
         python_test()
