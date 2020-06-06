@@ -1,7 +1,5 @@
-import concurrent.futures
 import os
 import sys
-import requests
 
 def install_python3():
         version = os.popen("python3 --version | grep -o 3[.][0-9]*[.][0-9]*$").read()
@@ -45,14 +43,28 @@ def java_test():
 
 
 if __name__ == '__main__':
-        #python installation
-        if install_python3():
-                install_from_sh("python.sh" + is_python2_installed())
-	#Threading
-        with concurrent.futures.ThreadPoolExecutor() as executor:
+	
+	# install dependencies
+        install_from_sh("dependencies.sh" + is_python2_installed())
 
-        	f1= executor.submit(install_from_sh,"Java.sh")
-        	f2= executor.submit(install_from_sh,"eclipse.sh")
+	# if open Python3 install software with threading
+       	if (sys.version_info[0] == 3):
+
+	 	import concurrent.futures
+        	# Threading
+        	with concurrent.futures.ThreadPoolExecutor() as executor:
+
+                	f2= executor.submit(install_from_sh,"eclipse.sh")
+                	f1= executor.submit(install_from_sh,"Java.sh")
+			if install_python3():
+                		f3= executor.submit(install_from_sh,"python.sh"+ is_python2_installed())
+
+        	
+	else:
+		if install_python3():
+                	install_from_sh("python.sh" + is_python2_installed())
+		install_from_sh("Java.sh")
+		install_from_sh("eclipse.sh")
 
         java_test()
         python_test()

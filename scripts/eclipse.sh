@@ -3,7 +3,7 @@
 #                                    Eclipse Installation Script
 #
 # Variables
-DIR="$HOME/eclipse"
+DIR="$HOME/opt"
 DOWNLOADS="$HOME/Downloads"
 
 
@@ -11,7 +11,7 @@ DOWNLOADS="$HOME/Downloads"
 function fill_log {
     if [ -f "install.log" ]          # Check if file install.log exists
     then
-        tee -a install.log           # Apends to log file with -a
+        tee -a eclipse.log           # Apends to log file with -a
     else
         tee install.log              # Creates a new log file
     fi
@@ -46,15 +46,16 @@ function check_dir {
 
 function install_eclipse {
 	cd $DOWNLOADS
-	wget -P $DOWNLOADS http://mirror.dkm.cz/eclipse/oomph/epp/2020-03/R/eclipse-inst-linux64.tar.gz
-	tar -xvzf eclipse-inst-linux64.tar.gz
-	eclipse-installer/eclipse-inst
+	wget -P $DOWNLOADS http://mirror.dkm.cz/eclipse/technology/epp/downloads/release/2020-03/R/eclipse-java-2020-03-R-linux-gtk-x86_64.tar.gz
+	tar -xvzf eclipse-java-2020-03-R-linux-gtk-x86_64.tar.gz
+	mv ./eclipse $DIR
 }
 
 
 function environment_variables {
-	echo 'EC_HOME="'$DIR'/java-2020-03/eclipse"' >> ~/.bashrc 
+	echo 'EC_HOME="'$DIR'/eclipse/eclipse"' >> ~/.bashrc 
 	echo 'PATH=$PATH:$EC_HOME' >> ~/.bashrc 
+	echo 'alias eclipse=$EC_HOME' >> ~/.bashrc 
 	source ~/.bashrc 
 }
 

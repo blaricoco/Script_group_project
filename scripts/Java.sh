@@ -11,7 +11,7 @@ DOWNLOAD_LINK="https://www.oracle.com/webapps/redirect/signon?nexturl=https://do
 # Functions
 
 function fill_log {
-    if [ -f "install.log" ]          # Check if file install.log exists
+    if [ -f "java.log" ]          # Check if file install.log exists
     then
         tee -a install.log           # Apends to log file with -a
     else
@@ -41,12 +41,12 @@ function show_progress {
 }
 
 
-function update_system {
-    sudo apt update                 # Compare version with repo
-    sudo apt --yes upgrade          # Specifying yes to upgrade to avoid interuptions
-    sudo apt --yes install curl     # Using curl to download Java package
-    sudo apt --yes install tar      # Using tar to extract java file
-}
+#function update_system {
+#    sudo apt update                 # Compare version with repo
+#    sudo apt --yes upgrade          # Specifying yes to upgrade to avoid interuptions
+#    sudo apt --yes install curl     # Using curl to download Java package
+#    sudo apt --yes install tar      # Using tar to extract java file
+#}
 
 
 function install_java {
@@ -72,8 +72,8 @@ function environment_variables {
 # End of functions
 
 #updating
-show_progress 1 | fill_log
-update_system | fill_log
+#show_progress 1 | fill_log
+#update_system | fill_log
 
 #Installing
 show_progress 2 | fill_log
