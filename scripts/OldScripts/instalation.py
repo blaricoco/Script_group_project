@@ -54,11 +54,6 @@ if __name__ == '__main__':
 	#eclipse instalation
 	install_from_sh("eclipse.sh")
 
-
 	python_test()
 	java_test()
-
-	
-	
-
 

@@ -13,9 +13,9 @@ DOWNLOAD_LINK="https://www.oracle.com/webapps/redirect/signon?nexturl=https://do
 function fill_log {
     if [ -f "java.log" ]          # Check if file install.log exists
     then
-        tee -a install.log           # Apends to log file with -a
+        tee -a java.log           # Apends to log file with -a
     else
-        tee install.log              # Creates a new log file
+        tee java.log              # Creates a new log file
     fi
 }
 
@@ -24,15 +24,10 @@ function show_progress {
     case $1 in
         1)
             echo
-            echo "1. Updating System"
-            echo "------------------"
-            ;;
-        2) 
-            echo
             echo "2. Installing Java"
             echo "------------------"
             ;;
-        3) 
+        2)
             echo
             echo "3. Updating Java Environment Variables"
             echo "--------------------------------------"
@@ -40,14 +35,7 @@ function show_progress {
     esac
 }
 
-
-#function update_system {
-#    sudo apt update                 # Compare version with repo
-#    sudo apt --yes upgrade          # Specifying yes to upgrade to avoid interuptions
-#    sudo apt --yes install curl     # Using curl to download Java package
-#    sudo apt --yes install tar      # Using tar to extract java file
-#}
-
+# Functions
 
 function install_java {
     # Curl supports a large number of protocol calls
@@ -69,19 +57,14 @@ function environment_variables {
     echo "export PATH=$PATH:$JAVA_HOME/bin" >> ~/.bashrc
 }
 
-# End of functions
-
-#updating
-#show_progress 1 | fill_log
-#update_system | fill_log
 
 #Installing
-show_progress 2 | fill_log
-install_java | fill_log
+show_progress 1 | fill.log
+install_java | fill.log
 
 #Variables
-show_progress 3 | fill_log
-environment_variables | fill_log
+show_progress 2 | fill.log
+environment_variables | fill.log
 
 
 

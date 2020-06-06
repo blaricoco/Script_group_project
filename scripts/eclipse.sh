@@ -9,11 +9,11 @@ DOWNLOADS="$HOME/Downloads"
 
 # Functions
 function fill_log {
-    if [ -f "install.log" ]          # Check if file install.log exists
+    if [ -f "eclipse.log" ]          # Check if file install.log exists
     then
         tee -a eclipse.log           # Apends to log file with -a
     else
-        tee install.log              # Creates a new log file
+        tee eclipse.log              # Creates a new log file
     fi
 }
 
@@ -61,15 +61,15 @@ function environment_variables {
 
 # End of functions
 
-#updating
+# Checking
 show_progress 1 | fill_log
 check_dir | fill_log
 
-#Installing
+# Installing
 show_progress 2 | fill_log
 install_eclipse | fill_log
 
-#Variables
+# Variables
 show_progress 3 | fill_log
 environment_variables | fill_log
 
